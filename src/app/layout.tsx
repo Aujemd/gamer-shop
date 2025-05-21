@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import { archivo, area } from "@/app/fonts";
 
-import "./globals.css";
+import "../css/global.css";
 
 export const metadata: Metadata = {
     title: "Apply Digital Test",
