@@ -1,5 +1,6 @@
 import antfu from "@antfu/eslint-config";
 import nextPlugin from "@next/eslint-plugin-next";
+import jsdoc from "eslint-plugin-jsdoc";
 
 export default antfu(
     {
@@ -15,10 +16,12 @@ export default antfu(
     {
         plugins: {
             "@next/next": nextPlugin,
+            jsdoc,
         },
         rules: {
             ...nextPlugin.configs.recommended.rules,
             ...nextPlugin.configs["core-web-vitals"].rules,
+            ...jsdoc.configs["recommended-typescript-error"].rules,
         },
     },
     {

@@ -2,6 +2,11 @@ import { allGames, availableFilters, delay } from "@/utils/endpoint";
 
 const ITEMS_PER_PAGE = 12;
 
+/**
+ * GET /api/games
+ * @param request - The incoming request object.
+ * @returns - A JSON response containing the filtered games, available filters, total pages, and current page.
+ */
 export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const genre = searchParams.get("genre");
