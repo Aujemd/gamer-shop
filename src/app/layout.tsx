@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { archivo, area } from "@/app/fonts";
+import { Layout } from "@/app/layout/index";
 
 import "../css/global.css";
 
@@ -24,7 +25,9 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${archivo.variable} ${area.variable}`}>
-                {children}
+                <Layout>
+                    {children}
+                </Layout>
             </body>
         </html>
     );
