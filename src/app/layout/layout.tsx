@@ -1,5 +1,7 @@
 import type { ReactNode } from "react";
 
+import Header from "@/app/layout/header";
+
 type LayoutProps = Readonly<{
     children: ReactNode;
 }>;
@@ -13,6 +15,7 @@ type LayoutProps = Readonly<{
 export default function Layout({ children }: LayoutProps) {
     return (
         <main>
+            <Header />
             {children}
         </main>
     );
