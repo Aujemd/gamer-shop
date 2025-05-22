@@ -1,4 +1,4 @@
-@theme inline {
+@theme {
     --font-archivo: var(--font-archivo);
     --font-area: var(--font-area);
 }

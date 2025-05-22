@@ -1,3 +1,7 @@
 @theme inline {
     --color-surface-secondary: #eeeeee;
+    --color-gray-medium: #3b3b3b;
+    --color-stroke-secondary: #8f8f8f;
+    --color-cta-fill-primary: #585660;
+    --color-neutral-700: #404040;
 }
