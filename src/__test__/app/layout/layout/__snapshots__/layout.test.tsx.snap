@@ -5,6 +5,7 @@ exports[`layout Component renders correctly 1`] = `
   <main>
     <header
       class="bg-surface-secondary  "
+      data-testid="layout-header-test-id"
     >
       <div
         class="px-6 py-5 flex items-center justify-between text-cta-fill-primary lg:max-w-desktop mx-auto"
@@ -41,6 +42,7 @@ exports[`layout Component renders correctly 1`] = `
     Hello Layout
     <footer
       class="bg-neutral-700 py-16 flex justify-center items-center "
+      data-testid="layout-footer-test-id"
     >
       <a
         data-testid="footer-logo-link-test-id"

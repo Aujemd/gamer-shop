@@ -1,10 +1,8 @@
-import type { ReactNode } from "react";
+import type { PropsWithChildren } from "react";
 
 import { Footer, Header } from "@/app/layout/index";
 
-type LayoutProps = Readonly<{
-    children: ReactNode;
-}>;
+type LayoutProps = Readonly<PropsWithChildren>;
 
 /**
  * Layout component for the application.
@@ -15,9 +13,9 @@ export default function Layout(props: LayoutProps) {
     const { children } = props;
     return (
         <main>
-            <Header />
+            <Header data-testid="layout-header-test-id" />
             {children}
-            <Footer />
+            <Footer data-testid="layout-footer-test-id" />
         </main>
     );
 }

@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 import { Footer } from "@/app/layout/index";
 
@@ -9,19 +9,23 @@ describe("footer Component", () => {
     });
 
     it("applies custom className", () => {
-        const { getByTestId } = render(<Footer className="custom-class" data-testid="footer-test-id" />);
-        expect(getByTestId("footer-test-id")).toBeInTheDocument();
-        expect(getByTestId("footer-test-id")).toHaveClass("custom-class");
+        render(<Footer className="custom-class" data-testid="footer-test-id" />);
+        const footer = screen.getByTestId("footer-test-id");
+        expect(footer).toBeInTheDocument();
+        expect(footer).toHaveClass("custom-class");
     });
 
     it("renders the logo link", () => {
-        const { getByTestId } = render(<Footer />);
-        expect(getByTestId("footer-logo-link-test-id")).toBeInTheDocument();
-        expect(getByTestId("footer-logo-link-test-id")).toHaveAttribute("href", "/");
+        render(<Footer />);
+        const logoLink = screen.getByTestId("footer-logo-link-test-id");
+        expect(logoLink).toBeInTheDocument();
+        expect(logoLink).toHaveAttribute("href", "/");
     });
 
     it("renders the LogoIcon component", () => {
-        const { getByTestId } = render(<Footer />);
-        expect(getByTestId("footer-logo-icon-test-id")).toBeInTheDocument();
+        render(<Footer />);
+        const logoIcon = screen.getByTestId("footer-logo-icon-test-id");
+        expect(logoIcon).toBeInTheDocument();
+        expect(logoIcon).toBeInTheDocument();
     });
 });

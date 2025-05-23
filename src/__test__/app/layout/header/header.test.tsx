@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 import { Header } from "@/app/layout/index";
 
@@ -9,28 +9,31 @@ describe("header Component", () => {
     });
 
     it("should render the header element with custom props", () => {
-        const { getByTestId } = render(<Header data-testid="header-test-id" className="custom-class" />);
-        expect(getByTestId("header-test-id")).toBeInTheDocument();
-        expect(getByTestId("header-test-id")).toHaveClass("custom-class");
+        render(<Header data-testid="header-test-id" className="custom-class" />);
+        const header = screen.getByTestId("header-test-id");
+        expect(header).toBeInTheDocument();
+        expect(header).toHaveClass("custom-class");
     });
 
     it("renders the logo/title element", () => {
-        const { getByTestId } = render(<Header />);
-
-        expect(getByTestId("header-logo-link-test-id")).toBeInTheDocument();
-        expect(getByTestId("header-logo-link-test-id")).toHaveAttribute("href", "/");
+        render(<Header />);
+        const logoLink = screen.getByTestId("header-logo-link-test-id");
+        expect(logoLink).toBeInTheDocument();
+        expect(logoLink).toHaveAttribute("href", "/");
     });
 
     describe("should test all cases for the cart element", () => {
         it("renders the cart's link", () => {
-            const { getByTestId } = render(<Header />);
-            expect(getByTestId("header-cart-link-test-id")).toBeInTheDocument();
-            expect(getByTestId("header-cart-link-test-id")).toHaveAttribute("href", "/cart");
+            render(<Header />);
+            const cartLink = screen.getByTestId("header-cart-link-test-id");
+            expect(cartLink).toBeInTheDocument();
+            expect(cartLink).toHaveAttribute("href", "/cart");
         });
 
         it("renders the cart's icon", () => {
-            const { getByTestId } = render(<Header />);
-            expect(getByTestId("header-cart-icon-test-id")).toBeInTheDocument();
+            render(<Header />);
+            const cartIcon = screen.getByTestId("header-cart-icon-test-id");
+            expect(cartIcon).toBeInTheDocument();
         });
     });
 });
