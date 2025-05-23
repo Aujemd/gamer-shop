@@ -4,14 +4,14 @@ import Link from "next/link";
 
 import { CartIcon } from "@/icons";
 
-type HeaderProps = Omit<HTMLAttributes<HTMLElement>, "children">;
+type HeaderProps = Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
 
 /**
  * Header component for the application.
  * @param props - The component props.
  * @returns The header component.
  */
-export default function Header(props: Readonly<HeaderProps>) {
+export default function Header(props: HeaderProps) {
     const { className = "", ...rest } = props;
     return (
         <header {...rest} className={`bg-surface-secondary  ${className}`}>
