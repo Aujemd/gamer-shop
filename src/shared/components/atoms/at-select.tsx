@@ -12,7 +12,10 @@ export default function AtSelect(props: AtSelectProps) {
     const { children, className = "", ...rest } = props;
 
     return (
-        <select className={`w-select-custom-width p-4 font-archivo text-xl font-normal leading-6 tracking-sm text-left ${className}`} {...rest}>
+        <select
+            {...rest}
+            className={`w-select-custom-width font-archivo text-xl font-normal leading-6 tracking-sm text-left ${className}`}
+        >
             {children}
         </select>
     );

@@ -9,10 +9,13 @@ type AtPageTitleProps = Readonly<HTMLAttributes<HTMLHeadingElement>>;
  * @returns The page title component.
  */
 export default function AtPageTitle(props: AtPageTitleProps) {
-    const { children, className = "" } = props;
+    const { children, className = "", ...rest } = props;
 
     return (
-        <h1 className={`font-archivo font-bold text-2xl leading-7 tracking-sm text-center text-gray-medium lg:text-4xl lg:leading-10 ${className}`} {...props}>
+        <h1
+            {...rest}
+            className={`font-archivo font-bold text-2xl leading-7 tracking-sm text-center text-gray-medium lg:text-4xl lg:leading-10 ${className}`}
+        >
             {children}
         </h1>
     );

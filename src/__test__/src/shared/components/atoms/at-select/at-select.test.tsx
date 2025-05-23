@@ -5,7 +5,7 @@ import { AtSelect } from "@/shared";
 describe("atSelect Component", () => {
     it("renders the select element", () => {
         const { asFragment } = render(
-            <AtSelect data-testid="select">
+            <AtSelect>
                 <option value="test-1">test 1</option>
                 <option value="test-2">test 2</option>
             </AtSelect>,

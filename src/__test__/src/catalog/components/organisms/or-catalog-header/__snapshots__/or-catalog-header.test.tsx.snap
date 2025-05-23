@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`orCatalogHeader Component should renders correctly 1`] = `
+<DocumentFragment>
+  <section
+    class="py-8 px-6 border-b border-b-stroke-tertiary "
+    data-testid="or-catalog-header-section-test-id"
+  >
+    <div
+      class="max-w-desktop mx-auto"
+    >
+      <h1
+        class="font-archivo font-bold text-2xl leading-7 tracking-sm text-center text-gray-medium lg:text-4xl lg:leading-10 text-left uppercase lg:normal-case"
+        data-testid="or-catalog-header-title-test-id"
+      >
+        Top Sellers
+      </h1>
+      <div
+        class="mt-8 lg:mt-12 divide-stroke-secondary divide-x lg:flex lg:items-center lg:justify-end"
+      >
+        <label
+          class="font-archivo font-bold text-xl leading-6 tracking-sm text-center pr-6"
+          data-testid="or-catalog-genre-select-label-test-id"
+          for="or-catalog-genre-select"
+        >
+          Genre
+        </label>
+        <select
+          class="w-select-custom-width font-archivo text-xl font-normal leading-6 tracking-sm text-left  py-4 pl-10"
+          data-testid="or-catalog-genre-select-test-id"
+          id="or-catalog-genre-select"
+        >
+          <option
+            value="1"
+          >
+            Option 1
+          </option>
+          <option
+            value="2"
+          >
+            Option 2
+          </option>
+          <option
+            value="3"
+          >
+            Option 3
+          </option>
+        </select>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

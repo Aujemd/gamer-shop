@@ -12,10 +12,12 @@ type LayoutProps = Readonly<PropsWithChildren>;
 export default function Layout(props: LayoutProps) {
     const { children } = props;
     return (
-        <main>
+        <>
             <Header data-testid="layout-header-test-id" />
-            {children}
+            <main>
+                {children}
+            </main>
             <Footer data-testid="layout-footer-test-id" />
-        </main>
+        </>
     );
 }
