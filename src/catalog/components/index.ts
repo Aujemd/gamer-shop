@@ -1,1 +1,1 @@
-export * from "./organisms";
+export { default as CatalogHeader } from "./catalog-header";

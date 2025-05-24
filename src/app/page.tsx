@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 
-import { OrCatalogHeader } from "@/catalog/components";
+import { CatalogHeader } from "@/catalog";
 
 /**
  * Main page component of the application.
@@ -9,7 +9,7 @@ import { OrCatalogHeader } from "@/catalog/components";
 export default async function Home(): Promise<JSX.Element> {
     return (
         <>
-            <OrCatalogHeader />
+            <CatalogHeader />
         </>
     );
 }
