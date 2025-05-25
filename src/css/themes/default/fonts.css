@@ -2,7 +2,4 @@
     /* Fonts */
     --font-archivo: var(--font-archivo);
     --font-area: var(--font-area);
-
-    /* Letter Spacing */
-    --tracking-sm: 0.4px;
 }

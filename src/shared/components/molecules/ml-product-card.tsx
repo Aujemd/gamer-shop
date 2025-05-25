@@ -12,7 +12,7 @@ import Image from "next/image";
  */
 export default function MlProductCard() {
     return (
-        <article className="p-6 space-y-5 border border-stroke-secondary rounded-2xl ">
+        <article className="p-6 space-y-5 border border-stroke-secondary rounded-2xl">
             <div className="relative h-60">
                 <Image
                     src="/game-images/cyberpunk2077.jpeg"
@@ -20,6 +20,7 @@ export default function MlProductCard() {
                     className="object-cover rounded-t-2xl"
                     fill
                 />
+                <span className="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-archivo font-normal">New</span>
             </div>
 
             <div className="space-y-3">
