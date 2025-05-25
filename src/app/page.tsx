@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 
-import { CatalogHeader } from "@/catalog";
+import { CatalogCard, CatalogHeader } from "@/catalog";
 
 /**
  * Main page component of the application.
@@ -10,6 +10,9 @@ export default async function Home(): Promise<JSX.Element> {
     return (
         <>
             <CatalogHeader />
+            <div className="p-6">
+                <CatalogCard />
+            </div>
         </>
     );
 }
