@@ -2,6 +2,7 @@ import type { JSX } from "react";
 
 import { CatalogHeader } from "@/catalog";
 import { MlProductCard } from "@/shared";
+import { allGames } from "@/utils/endpoint";
 
 /**
  * Main page component of the application.
@@ -12,7 +13,9 @@ export default async function Home(): Promise<JSX.Element> {
         <>
             <CatalogHeader />
             <div className="p-6">
-                <MlProductCard />
+                <MlProductCard
+                    {...allGames[0]}
+                />
             </div>
         </>
     );
