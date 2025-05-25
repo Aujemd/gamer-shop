@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`atButton Component should render correctly 1`] = `
+<DocumentFragment>
+  <button
+    class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg "
+  >
+    Click me
+  </button>
+</DocumentFragment>
+`;
