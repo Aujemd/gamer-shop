@@ -1,6 +1,6 @@
 import type { HTMLAttributes } from "react";
 
-import { AtPageTitle, AtSelect } from "@/shared";
+import { AtPageTitle, MlDropdown } from "@/shared";
 
 type CatalogHeaderProps = Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
 
@@ -16,16 +16,16 @@ export default function CatalogHeader(props: CatalogHeaderProps) {
     return (
         <section {...rest} className={`py-8 px-6 border-b border-b-stroke-tertiary ${className}`}>
             <div className="max-w-desktop mx-auto">
-                <AtPageTitle data-testid="catalog-header-title-test-id" className="text-left uppercase lg:normal-case">
+                <AtPageTitle data-testid="catalog-header-at-page-title-test-id" className="text-left uppercase lg:normal-case">
                     Top Sellers
                 </AtPageTitle>
                 <div className="mt-8 lg:mt-12 divide-stroke-secondary divide-x lg:flex lg:items-center lg:justify-end">
-                    <label htmlFor="catalog-genre-select" className="font-archivo font-bold text-xl leading-6 tracking-sm text-center pr-6" data-testid="catalog-genre-select-label-test-id">Genre</label>
-                    <AtSelect id="catalog-genre-select" className=" py-4 pl-10" data-testid="catalog-genre-select-test-id">
+                    <label htmlFor="catalog-header-genre-ml-dropdown" className="font-archivo font-bold text-xl leading-6 tracking-sm text-center pr-6" data-testid="catalog-header-genre-ml-dropdown-label-test-id">Genre</label>
+                    <MlDropdown id="catalog-header-genre-ml-dropdown" className=" py-4 pl-10" data-testid="catalog-header-genre-ml-dropdown-test-id">
                         <option value="1">Option 1</option>
                         <option value="2">Option 2</option>
                         <option value="3">Option 3</option>
-                    </AtSelect>
+                    </MlDropdown>
                 </div>
             </div>
 

@@ -1,24 +1,24 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 
-import { AtSelect } from "@/shared";
+import { MlDropdown } from "@/shared";
 
-describe("atSelect Component", () => {
+describe("mlDropdown Component", () => {
     it("renders the select element", () => {
         const { asFragment } = render(
-            <AtSelect>
+            <MlDropdown>
                 <option value="test-1">test 1</option>
                 <option value="test-2">test 2</option>
-            </AtSelect>,
+            </MlDropdown>,
         );
         expect(asFragment).toMatchSnapshot();
     });
 
     it("renders the children options", () => {
         render(
-            <AtSelect>
+            <MlDropdown>
                 <option value="test-1">test 1</option>
                 <option value="test-2">test 2</option>
-            </AtSelect>,
+            </MlDropdown>,
         );
         expect(screen.getByText("test 1")).toBeInTheDocument();
         expect(screen.getByText("test 2")).toBeInTheDocument();
@@ -26,14 +26,14 @@ describe("atSelect Component", () => {
 
     it("applies custom className", () => {
         render(
-            <AtSelect
-                data-testid="at-select-test-id"
+            <MlDropdown
+                data-testid="ml-dropdown-test-id"
                 className="custom-class"
             >
                 <option value="x">X</option>
-            </AtSelect>,
+            </MlDropdown>,
         );
-        const select = screen.getByTestId("at-select-test-id");
+        const select = screen.getByTestId("ml-dropdown-test-id");
 
         expect(select).toHaveClass("custom-class");
     });
@@ -41,15 +41,15 @@ describe("atSelect Component", () => {
     it("calls onChange when an option is selected", () => {
         const handleChange = jest.fn();
         render(
-            <AtSelect
-                data-testid="at-select-test-id"
+            <MlDropdown
+                data-testid="ml-dropdown-test-id"
                 onChange={handleChange}
             >
                 <option value="test">test</option>
-            </AtSelect>,
+            </MlDropdown>,
         );
 
-        const select = screen.getByTestId("at-select-test-id");
+        const select = screen.getByTestId("ml-dropdown-test-id");
         fireEvent.change(select, { target: { value: "test" } });
         expect(handleChange).toHaveBeenCalledTimes(1);
         expect(handleChange).toHaveBeenCalledWith(

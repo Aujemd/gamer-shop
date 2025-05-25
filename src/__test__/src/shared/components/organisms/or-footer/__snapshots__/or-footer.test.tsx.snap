@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`footer Component should render correctly 1`] = `
+exports[`orFooter Component should render correctly 1`] = `
 <DocumentFragment>
   <footer
     class="bg-neutral-700 py-16 flex justify-center items-center "
   >
     <a
-      data-testid="footer-logo-link-test-id"
+      data-testid="or-footer-logo-link-test-id"
       href="/"
     >
       <svg
-        data-testid="footer-logo-icon-test-id"
+        data-testid="or-footer-logo-icon-test-id"
         height="45"
         viewBox="0 0 171 45"
         width="171"

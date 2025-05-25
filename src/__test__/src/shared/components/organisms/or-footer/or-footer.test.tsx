@@ -1,30 +1,30 @@
 import { render, screen } from "@testing-library/react";
 
-import { Footer } from "@/app/layout/index";
+import { OrFooter } from "@/shared";
 
-describe("footer Component", () => {
+describe("orFooter Component", () => {
     it("should render correctly", () => {
-        const { asFragment } = render(<Footer />);
+        const { asFragment } = render(<OrFooter />);
         expect(asFragment()).toMatchSnapshot();
     });
 
     it("applies custom className", () => {
-        render(<Footer className="custom-class" data-testid="footer-test-id" />);
-        const footer = screen.getByTestId("footer-test-id");
+        render(<OrFooter className="custom-class" data-testid="or-footer-test-id" />);
+        const footer = screen.getByTestId("or-footer-test-id");
         expect(footer).toBeInTheDocument();
         expect(footer).toHaveClass("custom-class");
     });
 
     it("renders the logo link", () => {
-        render(<Footer />);
-        const logoLink = screen.getByTestId("footer-logo-link-test-id");
+        render(<OrFooter />);
+        const logoLink = screen.getByTestId("or-footer-logo-link-test-id");
         expect(logoLink).toBeInTheDocument();
         expect(logoLink).toHaveAttribute("href", "/");
     });
 
     it("renders the LogoIcon component", () => {
-        render(<Footer />);
-        const logoIcon = screen.getByTestId("footer-logo-icon-test-id");
+        render(<OrFooter />);
+        const logoIcon = screen.getByTestId("or-footer-logo-icon-test-id");
         expect(logoIcon).toBeInTheDocument();
         expect(logoIcon).toBeInTheDocument();
     });

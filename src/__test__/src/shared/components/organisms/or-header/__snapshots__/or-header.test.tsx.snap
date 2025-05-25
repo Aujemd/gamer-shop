@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`header Component should render correctly 1`] = `
+exports[`orHeader Component should render correctly 1`] = `
 <DocumentFragment>
   <header
     class="bg-surface-secondary "
@@ -12,18 +12,18 @@ exports[`header Component should render correctly 1`] = `
         class="font-area font-bold text-2xl leading-6 text-center tracking-sm"
       >
         <a
-          data-testid="header-logo-link-test-id"
+          data-testid="or-header-logo-link-test-id"
           href="/"
         >
           GamerShop
         </a>
       </h1>
       <a
-        data-testid="header-cart-link-test-id"
+        data-testid="or-header-cart-link-test-id"
         href="/cart"
       >
         <svg
-          data-testid="header-cart-icon-test-id"
+          data-testid="or-header-cart-icon-test-id"
           height="24"
           viewBox="0 0 24 24"
           width="24"

@@ -28,13 +28,13 @@ describe("layout Component", () => {
 
     it("renders the Header component", () => {
         render(<Layout>{contentMock}</Layout>);
-        const header = screen.getByTestId("layout-header-test-id");
+        const header = screen.getByTestId("layout-or-header-test-id");
         expect(header).toBeInTheDocument();
     });
 
     it("renders the Footer component", () => {
         render(<Layout>{contentMock}</Layout>);
-        const footer = screen.getByTestId("layout-footer-test-id");
+        const footer = screen.getByTestId("layout-or-footer-test-id");
         expect(footer).toBeInTheDocument();
     });
 });

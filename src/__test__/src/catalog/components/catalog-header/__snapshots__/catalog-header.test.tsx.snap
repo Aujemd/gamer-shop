@@ -11,7 +11,7 @@ exports[`catalogHeader Component should renders correctly 1`] = `
     >
       <h1
         class="font-archivo font-bold text-2xl leading-7 tracking-sm text-center text-gray-medium lg:text-4xl lg:leading-10 text-left uppercase lg:normal-case"
-        data-testid="catalog-header-title-test-id"
+        data-testid="catalog-header-at-page-title-test-id"
       >
         Top Sellers
       </h1>
@@ -20,15 +20,15 @@ exports[`catalogHeader Component should renders correctly 1`] = `
       >
         <label
           class="font-archivo font-bold text-xl leading-6 tracking-sm text-center pr-6"
-          data-testid="catalog-genre-select-label-test-id"
-          for="catalog-genre-select"
+          data-testid="catalog-header-genre-ml-dropdown-label-test-id"
+          for="catalog-header-genre-ml-dropdown"
         >
           Genre
         </label>
         <select
           class="w-select-custom-width font-archivo text-xl font-normal leading-6 tracking-sm text-left  py-4 pl-10"
-          data-testid="catalog-genre-select-test-id"
-          id="catalog-genre-select"
+          data-testid="catalog-header-genre-ml-dropdown-test-id"
+          id="catalog-header-genre-ml-dropdown"
         >
           <option
             value="1"

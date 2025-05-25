@@ -4,23 +4,23 @@ import Link from "next/link";
 
 import { LogoIcon } from "@/icons";
 
-type FooterProps = Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
+type OrFooterProps = Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
 
 /**
- * Footer component for the application.
+ * OrFooter component for the application.
  * @param props - The component props.
  * @returns The footer component.
  */
-export default function Footer(props: FooterProps) {
+export default function OrFooter(props: OrFooterProps) {
     const { className = "", ...rest } = props;
     return (
         <footer {...rest} className={`bg-neutral-700 py-16 flex justify-center items-center ${className}`}>
             <Link
                 href="/"
-                data-testid="footer-logo-link-test-id"
+                data-testid="or-footer-logo-link-test-id"
             >
                 <LogoIcon
-                    data-testid="footer-logo-icon-test-id"
+                    data-testid="or-footer-logo-icon-test-id"
                 />
             </Link>
         </footer>

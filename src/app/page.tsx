@@ -1,6 +1,7 @@
 import type { JSX } from "react";
 
-import { CatalogCard, CatalogHeader } from "@/catalog";
+import { CatalogHeader } from "@/catalog";
+import { MlProductCard } from "@/shared";
 
 /**
  * Main page component of the application.
@@ -11,7 +12,7 @@ export default async function Home(): Promise<JSX.Element> {
         <>
             <CatalogHeader />
             <div className="p-6">
-                <CatalogCard />
+                <MlProductCard />
             </div>
         </>
     );

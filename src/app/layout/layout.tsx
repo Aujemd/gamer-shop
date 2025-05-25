@@ -1,6 +1,6 @@
 import type { PropsWithChildren } from "react";
 
-import { Footer, Header } from "@/app/layout/index";
+import { OrFooter, OrHeader } from "@/shared";
 
 type LayoutProps = Readonly<PropsWithChildren>;
 
@@ -13,11 +13,11 @@ export default function Layout(props: LayoutProps) {
     const { children } = props;
     return (
         <>
-            <Header data-testid="layout-header-test-id" />
+            <OrHeader data-testid="layout-or-header-test-id" />
             <main>
                 {children}
             </main>
-            <Footer data-testid="layout-footer-test-id" />
+            <OrFooter data-testid="layout-or-footer-test-id" />
         </>
     );
 }

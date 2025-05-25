@@ -1,14 +1,15 @@
 import type { SelectHTMLAttributes } from "react";
 
-type AtSelectProps = Readonly<SelectHTMLAttributes<HTMLSelectElement>>;
+type MlDropdownProps = Readonly<SelectHTMLAttributes<HTMLSelectElement>>;
 
 /**
- * Atomic Select component.
- * Renders a styled select element.
+ * Molecule Dropdown component.
+ * Renders a custom select dropdown with specific styles.
+ * It accepts all standard select attributes and applies custom styles.
  * @param props - The component props.
  * @returns The select component.
  */
-export default function AtSelect(props: AtSelectProps) {
+export default function MlDropdown(props: MlDropdownProps) {
     const { children, className = "", ...rest } = props;
 
     return (

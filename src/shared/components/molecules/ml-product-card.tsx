@@ -7,11 +7,10 @@ import Image from "next/image";
 // type CatalogCardProps = Game & Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
 
 /**
- * CatalogCard component.
- * Container for displaying a catalog card item.
- * @returns The catalog card component.
+ * MlProductCard component for the application.
+ * @returns The product card component.
  */
-export default function CatalogCard() {
+export default function MlProductCard() {
     return (
         <article className="p-6 space-y-5 border border-stroke-secondary rounded-2xl ">
             <div className="relative h-60">
