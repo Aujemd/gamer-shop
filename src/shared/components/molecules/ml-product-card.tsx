@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 
+import { AtButton } from "@/shared";
+
 // import type { Game } from "@/utils/endpoint";
 
 // type CatalogCardProps = Game & Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
@@ -12,7 +14,7 @@ import Image from "next/image";
  */
 export default function MlProductCard() {
     return (
-        <article className="p-6 space-y-5 border border-stroke-secondary rounded-2xl">
+        <article className="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl">
             <div className="relative h-60">
                 <Image
                     src="/game-images/cyberpunk2077.jpeg"
@@ -25,13 +27,12 @@ export default function MlProductCard() {
 
             <div className="space-y-3">
                 <span className="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block">genre</span>
-                <div className="flex items-center justify-between font-archivo font-bold text-lg leading-5 tracking-sm text-gray-medium">
-                    <h2 className="inline">Product name</h2>
-                    <span className="inline">$119</span>
+                <div className="flex items-center justify-between font-archivo font-bold   tracking-sm text-gray-medium">
+                    <h2 className="inline text-lg leading-5">Product name</h2>
+                    <span className="inline text-xl leading-6 text-center">$119</span>
                 </div>
             </div>
-
-            <button className="uppercase font-archivo font-bold text-base leading-4 tracking-sm text-center py-5 w-full border border-gray-medium rounded-lg"> add to cart</button>
+            <AtButton className="py-5 w-full border border-gray-medium uppercase">ADD TO CART</AtButton>
         </article>
     );
 }
