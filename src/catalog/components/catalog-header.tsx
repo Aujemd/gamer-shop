@@ -28,7 +28,6 @@ export default function CatalogHeader(props: CatalogHeaderProps) {
                     </MlDropdown>
                 </div>
             </div>
-
         </section>
     );
 }

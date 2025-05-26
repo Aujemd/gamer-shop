@@ -1,2 +1,2 @@
-export { default as CatalogCard } from "../../shared/components/molecules/ml-product-card";
 export { default as CatalogHeader } from "./catalog-header";
+export { default as CatalogProducts } from "./catalog-products";
