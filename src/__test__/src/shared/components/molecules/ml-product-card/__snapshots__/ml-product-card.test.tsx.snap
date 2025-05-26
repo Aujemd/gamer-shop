@@ -3,7 +3,7 @@
 exports[`mlProductCard should render correctly 1`] = `
 <DocumentFragment>
   <article
-    class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl  "
+    class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl "
     data-testid="ml-product-card-test-id"
     description="An open-world, action-adventure story set in Night City."
   >

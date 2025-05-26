@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`orProduct component should render correctly 1`] = `
+<DocumentFragment>
+  <ul
+    class="grid grid-cols-1 gap-6 py-8 px-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 lg:pl-0 lg:pr-11 lg:py-12 items-stretch undefined"
+  >
+    <li>
+      Item 1
+    </li>
+    <li>
+      Item 2
+    </li>
+  </ul>
+</DocumentFragment>
+`;
