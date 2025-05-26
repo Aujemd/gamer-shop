@@ -1,7 +1,7 @@
 import type { JSX } from "react";
 
 import { CatalogHeader } from "@/catalog";
-import { MlProductCard } from "@/shared";
+import { MlProductCard, OrProduct } from "@/shared";
 import { allGames } from "@/utils/endpoint";
 
 /**
@@ -12,11 +12,14 @@ export default async function Home(): Promise<JSX.Element> {
     return (
         <>
             <CatalogHeader />
-            <div className="p-6">
-                <MlProductCard
-                    {...allGames[0]}
-                />
-            </div>
+            <OrProduct className="max-w-desktop mx-auto">
+                {allGames.map(game => (
+                    <li key={game.id}>
+                        <MlProductCard {...game} />
+                    </li>
+                ))}
+            </OrProduct>
+
         </>
     );
 }
