@@ -19,7 +19,7 @@ export default function MlProductCard(props: MlProductCard) {
 
     return (
         <article
-            className={`p-6 space-y-5 border-half border-stroke-secondary rounded-2xl ${className}`}
+            className={`p-6 space-y-5 border-half border-stroke-secondary rounded-2xl  ${className}`}
             {...rest}
         >
             <div className="relative h-60">

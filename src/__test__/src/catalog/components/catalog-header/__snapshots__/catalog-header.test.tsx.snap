@@ -3,7 +3,7 @@
 exports[`catalogHeader Component should renders correctly 1`] = `
 <DocumentFragment>
   <section
-    class="py-8 px-6 border-b border-b-stroke-tertiary "
+    class="py-8 px-6 border-b border-b-stroke-tertiary lg:px-0 lg:py-12 "
     data-testid="catalog-header-section-test-id"
   >
     <div

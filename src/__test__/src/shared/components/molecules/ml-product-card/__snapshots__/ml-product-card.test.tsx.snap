@@ -3,7 +3,7 @@
 exports[`mlProductCard should render correctly 1`] = `
 <DocumentFragment>
   <article
-    class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl "
+    class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl  "
     data-testid="ml-product-card-test-id"
     description="An open-world, action-adventure story set in Night City."
   >
@@ -43,7 +43,7 @@ exports[`mlProductCard should render correctly 1`] = `
         class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
       >
         <h2
-          class="inline text-lg leading-5"
+          class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
           data-testid="ml-product-card-name-test-id-1"
         >
           Cyberpunk 2077
