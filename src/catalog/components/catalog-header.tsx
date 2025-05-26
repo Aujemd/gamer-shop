@@ -14,7 +14,7 @@ export default function CatalogHeader(props: CatalogHeaderProps) {
     const { className = "", ...rest } = props;
 
     return (
-        <section {...rest} className={`py-8 px-6 border-b border-b-stroke-tertiary ${className}`}>
+        <section {...rest} className={`py-8 px-6 border-b border-b-stroke-tertiary lg:px-0 lg:py-12 ${className}`}>
             <div className="max-w-desktop mx-auto">
                 <AtPageTitle data-testid="catalog-header-at-page-title-test-id" className="text-left uppercase lg:normal-case">
                     Top Sellers

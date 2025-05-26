@@ -14,8 +14,11 @@ export default async function Home(): Promise<JSX.Element> {
             <CatalogHeader />
             <OrProduct className="max-w-desktop mx-auto">
                 {allGames.map(game => (
-                    <li key={game.id}>
-                        <MlProductCard {...game} />
+                    <li key={game.id} className="h-full">
+                        <MlProductCard
+                            {...game}
+                            className="h-full"
+                        />
                     </li>
                 ))}
             </OrProduct>
