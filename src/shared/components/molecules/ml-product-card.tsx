@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import type { Game } from "@/utils/endpoint";
 
-import { AtButton } from "@/shared";
+import { AtButton, formatCurrency } from "@/shared";
 
 type MlProductCard = Game & Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
 
@@ -15,7 +15,7 @@ type MlProductCard = Game & Readonly<Omit<HTMLAttributes<HTMLElement>, "children
  */
 export default function MlProductCard(props: MlProductCard) {
     const { className = "", ...productData } = props;
-    const { id, genre, image, name, description, price, isNew, ...rest } = productData;
+    const { id, genre, image, name, price, isNew, ...rest } = productData;
 
     return (
         <article
@@ -46,7 +46,12 @@ export default function MlProductCard(props: MlProductCard) {
             </div>
 
             <div className="space-y-3">
-                <span className="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block">genre</span>
+                <span
+                    className="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                    data-testid={`ml-product-card-genre-test-id-${id}`}
+                >
+                    {genre}
+                </span>
                 <div className="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium">
                     <h2
                         className="inline text-lg leading-5"
@@ -58,7 +63,7 @@ export default function MlProductCard(props: MlProductCard) {
                         className="inline text-xl leading-6 text-center"
                         data-testid={`ml-product-card-price-test-id-${id}`}
                     >
-                        {price}
+                        {formatCurrency(price)}
                     </span>
                 </div>
             </div>

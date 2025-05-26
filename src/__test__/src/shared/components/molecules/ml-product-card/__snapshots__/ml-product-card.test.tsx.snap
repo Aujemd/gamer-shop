@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mlProductCard should render correctly 1`] = `
+<DocumentFragment>
+  <article
+    class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl "
+    data-testid="ml-product-card-test-id"
+    description="An open-world, action-adventure story set in Night City."
+  >
+    <div
+      class="relative h-60"
+    >
+      <img
+        alt="Cyberpunk 2077"
+        class="object-cover rounded-t-2xl"
+        data-nimg="fill"
+        data-testid="ml-product-card-image-test-id-1"
+        decoding="async"
+        loading="lazy"
+        sizes="100vw"
+        src="/_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=3840&q=75"
+        srcset="/_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+      />
+      <span
+        aria-label="New Product"
+        class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-archivo font-normal"
+        data-testid="ml-product-card-is-new-label-test-id-1"
+      >
+        New
+      </span>
+    </div>
+    <div
+      class="space-y-3"
+    >
+      <span
+        class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+        data-testid="ml-product-card-genre-test-id-1"
+      >
+        Action
+      </span>
+      <div
+        class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+      >
+        <h2
+          class="inline text-lg leading-5"
+          data-testid="ml-product-card-name-test-id-1"
+        >
+          Cyberpunk 2077
+        </h2>
+        <span
+          class="inline text-xl leading-6 text-center"
+          data-testid="ml-product-card-price-test-id-1"
+        >
+          $59.99
+        </span>
+      </div>
+    </div>
+    <button
+      aria-label="add Cyberpunk 2077 to cart"
+      class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
+      data-testid="ml-product-card-button-1"
+    >
+      ADD TO CART
+    </button>
+  </article>
+</DocumentFragment>
+`;
