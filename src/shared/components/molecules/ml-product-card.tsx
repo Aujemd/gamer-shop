@@ -54,7 +54,7 @@ export default function MlProductCard(props: MlProductCard) {
                 </span>
                 <div className="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium">
                     <h2
-                        className="inline text-lg leading-5"
+                        className="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
                         data-testid={`ml-product-card-name-test-id-${id}`}
                     >
                         {name}
