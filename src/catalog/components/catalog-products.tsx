@@ -24,7 +24,11 @@ export default function CatalogProducts(props: CatalogProductsProps) {
                 <OrProduct className="pb-0">
                     {products.map(product => (
                         <li key={product.id} className="h-full">
-                            <MlProductCard {...product} className="h-full" />
+                            <MlProductCard
+                                {...product}
+                                className="h-full"
+                                data-testid={`catalog-products-ml-product-card-${product.id}-test-id`}
+                            />
                         </li>
                     ))}
                 </OrProduct>
@@ -32,6 +36,7 @@ export default function CatalogProducts(props: CatalogProductsProps) {
                     <AtButton
                         aria-label="See More Products"
                         className="py-4 uppercase text-white bg-cta-fill-primary text-sm w-full md:w-auto md:py-5 md:px-6 md:text-base"
+                        data-testid="catalog-products-see-more-button-test-id"
                     >
                         See More
                     </AtButton>
