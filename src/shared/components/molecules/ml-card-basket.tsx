@@ -46,7 +46,7 @@ export default function MlCardBasket(props: MlCardBasket) {
                 <span className="mb-3 font-bold text-sm leading-4 tracking-normal text-neutral-500 uppercase block">{genre}</span>
                 <div className="space-y-2 mb-6 md:mb-5">
                     <h2 className="font-bold text-lg leading-5 tracking-sm text-gray-medium">{name}</h2>
-                    <p className="font-normal text-base leading-5 tracking-normal text-neutral-500 whitespace-nowrap text-ellipsis overflow-hidden">{description}</p>
+                    {description && <p className="font-normal text-base leading-5 tracking-normal text-neutral-500 whitespace-nowrap text-ellipsis overflow-hidden">{description}</p>}
                 </div>
                 <data
                     className="w-full block text-right font-archivo font-bold text-lg leading-5 text-gray-medium tracking-sm pt-5"
