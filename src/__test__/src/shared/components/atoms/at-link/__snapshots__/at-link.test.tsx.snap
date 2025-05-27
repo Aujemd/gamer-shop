@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`atLink Component should render correctly 1`] = `
+<DocumentFragment>
+  <a
+    class="font-archivo font-medium text-base leading-4 tracking-normal "
+    href="/home"
+  >
+    Home
+  </a>
+</DocumentFragment>
+`;
