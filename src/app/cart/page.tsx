@@ -2,7 +2,8 @@ import type { JSX } from "react";
 
 import { CartHeader } from "@/cart";
 import { ArrowLeft } from "@/icons";
-import { AtLink } from "@/shared";
+import { AtLink, MlCardBasket } from "@/shared";
+import { allGames } from "@/utils/endpoint";
 
 /**
  * Cart page component of the application.
@@ -21,6 +22,9 @@ export default async function Cart(): Promise<JSX.Element> {
                 Back to Catalog
             </AtLink>
             <CartHeader />
+            <div className="py-8 px-6">
+                <MlCardBasket {...allGames[0]} />
+            </div>
         </div>
     );
 }

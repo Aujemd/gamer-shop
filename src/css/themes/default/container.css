@@ -1,4 +1,7 @@
 @theme inline {
+    /* custom containers */
     --container-desktop: 1280px;
-    --container-select-custom-width: 237px;
+
+    /* custom components */
+    --container-at-select-custom-width: 237px;
 }

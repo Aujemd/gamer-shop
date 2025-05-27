@@ -15,7 +15,7 @@ export default function MlDropdown(props: MlDropdownProps) {
     return (
         <select
             {...rest}
-            className={`w-select-custom-width font-archivo text-xl font-normal leading-6 tracking-sm text-left ${className}`}
+            className={`w-at-select-custom-width font-archivo text-xl font-normal leading-6 tracking-sm text-left ${className}`}
         >
             {children}
         </select>

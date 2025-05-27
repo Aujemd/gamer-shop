@@ -19,7 +19,7 @@ export default function MlProductCard(props: MlProductCard) {
 
     return (
         <article
-            className={`p-6 space-y-5 border-half border-stroke-secondary rounded-2xl ${className}`}
+            className={`p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo ${className}`}
             {...rest}
         >
             <div className="relative h-60">
@@ -34,7 +34,7 @@ export default function MlProductCard(props: MlProductCard) {
                 {
                     isNew && (
                         <span
-                            className="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-archivo font-normal"
+                            className="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
                             aria-label="New Product"
                             data-testid={`ml-product-card-is-new-label-test-id-${id}`}
                         >
@@ -42,29 +42,28 @@ export default function MlProductCard(props: MlProductCard) {
                         </span>
                     )
                 }
-
             </div>
-
             <div className="space-y-3">
                 <span
-                    className="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                    className="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                     data-testid={`ml-product-card-genre-test-id-${id}`}
                 >
                     {genre}
                 </span>
-                <div className="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium">
+                <div className="flex items-center justify-between font-bold tracking-sm text-gray-medium">
                     <h2
                         className="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
                         data-testid={`ml-product-card-name-test-id-${id}`}
                     >
                         {name}
                     </h2>
-                    <span
+                    <data
+                        value={price}
                         className="inline text-xl leading-6 text-center"
                         data-testid={`ml-product-card-price-test-id-${id}`}
                     >
                         {formatCurrency(price)}
-                    </span>
+                    </data>
                 </div>
             </div>
             <AtButton
