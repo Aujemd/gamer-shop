@@ -13,7 +13,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-1-test-id"
             description="An open-world, action-adventure story set in Night City."
           >
@@ -34,7 +34,7 @@ exports[`catalogProducts should render correctly 1`] = `
               />
               <span
                 aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-archivo font-normal"
+                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
                 data-testid="ml-product-card-is-new-label-test-id-1"
               >
                 New
@@ -44,13 +44,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-1"
               >
                 Action
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -58,12 +58,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Cyberpunk 2077
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-1"
+                  value="59.99"
                 >
                   $59.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -79,7 +80,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-2-test-id"
             description="A story-driven, next-generation open world role-playing game."
           >
@@ -103,13 +104,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-2"
               >
                 RPG
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -117,12 +118,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   The Witcher 3: Wild Hunt
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-2"
+                  value="39.99"
                 >
                   $39.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -138,7 +140,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-3-test-id"
             description="An epic adventure that breaks boundaries in the Zelda series."
           >
@@ -159,7 +161,7 @@ exports[`catalogProducts should render correctly 1`] = `
               />
               <span
                 aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-archivo font-normal"
+                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
                 data-testid="ml-product-card-is-new-label-test-id-3"
               >
                 New
@@ -169,13 +171,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-3"
               >
                 Adventure
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -183,12 +185,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   The Legend of Zelda: Breath of the Wild
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-3"
+                  value="59.99"
                 >
                   $59.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -204,7 +207,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-4-test-id"
             description="An action-adventure game set in the sprawling city of Los Santos."
           >
@@ -228,13 +231,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-4"
               >
                 Action
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -242,12 +245,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Grand Theft Auto V
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-4"
+                  value="29.99"
                 >
                   $29.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -263,7 +267,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-5-test-id"
             description="A fast-paced, thrilling shooter where you battle demons."
           >
@@ -287,13 +291,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-5"
               >
                 Shooter
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -301,12 +305,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   DOOM Eternal
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-5"
+                  value="59.99"
                 >
                   $59.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -322,7 +327,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-6-test-id"
             description="A life simulation game where you control the rich and entertaining moments of your Sims' lives."
           >
@@ -346,13 +351,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-6"
               >
                 Simulation
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -360,12 +365,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   The Sims 4
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-6"
+                  value="39.99"
                 >
                   $39.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -381,7 +387,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-7-test-id"
             description="Gears of War is an acclaimed third-person shooter video game focused on humanity's battle against the terrifying Locust Horde"
           >
@@ -402,7 +408,7 @@ exports[`catalogProducts should render correctly 1`] = `
               />
               <span
                 aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-archivo font-normal"
+                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
                 data-testid="ml-product-card-is-new-label-test-id-7"
               >
                 New
@@ -412,13 +418,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-7"
               >
                 Action
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -426,12 +432,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Gear Of War
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-7"
+                  value="59.99"
                 >
                   $59.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -447,7 +454,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-8-test-id"
             description="An open world racing game set in a fictional representation of the United Kingdom."
           >
@@ -471,13 +478,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-8"
               >
                 Racing
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -485,12 +492,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Forza Horizon 4
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-8"
+                  value="49.99"
                 >
                   $49.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -506,7 +514,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-9-test-id"
             description="The latest installment in the world-renowned football simulation series."
           >
@@ -527,7 +535,7 @@ exports[`catalogProducts should render correctly 1`] = `
               />
               <span
                 aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-archivo font-normal"
+                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
                 data-testid="ml-product-card-is-new-label-test-id-9"
               >
                 New
@@ -537,13 +545,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-9"
               >
                 Sports
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -551,12 +559,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   FIFA 21
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-9"
+                  value="59.99"
                 >
                   $59.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -572,7 +581,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-10-test-id"
             description="A massively multiplayer online role-playing game set in the Warcraft universe."
           >
@@ -596,13 +605,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-10"
               >
                 MMORPG
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -610,12 +619,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   World of Warcraft
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-10"
+                  value="14.99"
                 >
                   $14.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -631,7 +641,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-11-test-id"
             description="A puzzle-platform game that challenges you with mind-bending puzzles."
           >
@@ -655,13 +665,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-11"
               >
                 Puzzle
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -669,12 +679,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Portal 2
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-11"
+                  value="19.99"
                 >
                   $19.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -690,7 +701,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-12-test-id"
             description="A survival horror game set in the aftermath of a deadly virus outbreak."
           >
@@ -714,13 +725,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-12"
               >
                 Horror
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -728,12 +739,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Resident Evil 2
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-12"
+                  value="59.99"
                 >
                   $59.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -749,7 +761,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-13-test-id"
             description="An action-adventure game set in a beautifully hand-drawn mysterious world."
           >
@@ -770,7 +782,7 @@ exports[`catalogProducts should render correctly 1`] = `
               />
               <span
                 aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-archivo font-normal"
+                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
                 data-testid="ml-product-card-is-new-label-test-id-13"
               >
                 New
@@ -780,13 +792,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-13"
               >
                 Indie
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -794,12 +806,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Hollow Knight
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-13"
+                  value="14.99"
                 >
                   $14.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -815,7 +828,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-14-test-id"
             description="A game where you seek revenge on your foes in late 1500s Sengoku Japan."
           >
@@ -836,7 +849,7 @@ exports[`catalogProducts should render correctly 1`] = `
               />
               <span
                 aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-archivo font-normal"
+                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
                 data-testid="ml-product-card-is-new-label-test-id-14"
               >
                 New
@@ -846,13 +859,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-14"
               >
                 Action
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -860,12 +873,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Sekiro: Shadows Die Twice
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-14"
+                  value="59.99"
                 >
                   $59.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -881,7 +895,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-15-test-id"
             description="A single-player first-person mystery set in the Wyoming wilderness."
           >
@@ -905,13 +919,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-15"
               >
                 Adventure
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -919,12 +933,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Firewatch
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-15"
+                  value="19.99"
                 >
                   $19.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -940,7 +955,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-16-test-id"
             description="Live as a legendary Viking warrior raised on tales of battle and glory."
           >
@@ -961,7 +976,7 @@ exports[`catalogProducts should render correctly 1`] = `
               />
               <span
                 aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-archivo font-normal"
+                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
                 data-testid="ml-product-card-is-new-label-test-id-16"
               >
                 New
@@ -971,13 +986,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-16"
               >
                 Action-Adventure
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -985,12 +1000,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Assassin's Creed Valhalla
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-16"
+                  value="59.99"
                 >
                   $59.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -1006,7 +1022,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-17-test-id"
             description="Embark on an epic journey with your friends to reclaim your homeland."
           >
@@ -1030,13 +1046,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-17"
               >
                 RPG
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -1044,12 +1060,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Final Fantasy XV
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-17"
+                  value="39.99"
                 >
                   $39.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -1065,7 +1082,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-18-test-id"
             description="A free-to-play battle royale game where you fight to be the last one standing."
           >
@@ -1089,13 +1106,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-18"
               >
                 Shooter
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -1103,12 +1120,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Call of Duty: Warzone
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-18"
+                  value="77.99"
                 >
                   $77.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -1124,7 +1142,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-19-test-id"
             description="A classic strategy game remastered in full HD with new features."
           >
@@ -1148,13 +1166,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-19"
               >
                 Strategy
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -1162,12 +1180,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Age of Empires II: Definitive Edition
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-19"
+                  value="19.99"
                 >
                   $19.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -1183,7 +1202,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-20-test-id"
             description="A fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements."
           >
@@ -1204,7 +1223,7 @@ exports[`catalogProducts should render correctly 1`] = `
               />
               <span
                 aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-archivo font-normal"
+                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
                 data-testid="ml-product-card-is-new-label-test-id-20"
               >
                 New
@@ -1214,13 +1233,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-20"
               >
                 MOBA
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -1228,12 +1247,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   League of Legends
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-20"
+                  value="90"
                 >
                   $90.00
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -1249,7 +1269,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-21-test-id"
             description="Help Madeline survive her inner demons on her journey to the top of Celeste Mountain."
           >
@@ -1273,13 +1293,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-21"
               >
                 Indie
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -1287,12 +1307,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Celeste
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-21"
+                  value="19.99"
                 >
                   $19.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -1308,7 +1329,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-22-test-id"
             description="The iconic puzzle game Tetris with a 99-player battle royale twist."
           >
@@ -1329,7 +1350,7 @@ exports[`catalogProducts should render correctly 1`] = `
               />
               <span
                 aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-archivo font-normal"
+                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
                 data-testid="ml-product-card-is-new-label-test-id-22"
               >
                 New
@@ -1339,13 +1360,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-22"
               >
                 Puzzle
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -1353,12 +1374,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Tetris 99
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-22"
+                  value="85.99"
                 >
                   $85.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -1374,7 +1396,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-23-test-id"
             description="A fast-paced battle royale game where players fight to be the last one standing."
           >
@@ -1398,13 +1420,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-23"
               >
                 Battle Royale
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -1412,12 +1434,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Free Fire
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-23"
+                  value="60.99"
                 >
                   $60.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -1433,7 +1456,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-24-test-id"
             description="Kratos steps into the world of Norse gods in this critically acclaimed action game."
           >
@@ -1457,13 +1480,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-24"
               >
                 Action
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -1471,12 +1494,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   God of War
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-24"
+                  value="49.99"
                 >
                   $49.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -1492,7 +1516,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-25-test-id"
             description="An epic tale of life in America at the dawn of the modern age."
           >
@@ -1513,7 +1537,7 @@ exports[`catalogProducts should render correctly 1`] = `
               />
               <span
                 aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-archivo font-normal"
+                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
                 data-testid="ml-product-card-is-new-label-test-id-25"
               >
                 New
@@ -1523,13 +1547,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-25"
               >
                 Adventure
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -1537,12 +1561,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Red Dead Redemption 2
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-25"
+                  value="59.99"
                 >
                   $59.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -1558,7 +1583,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-26-test-id"
             description="A complex, emotional story in a brutal post-pandemic world."
           >
@@ -1582,13 +1607,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-26"
               >
                 Horror
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -1596,12 +1621,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   The Last of Us Part II
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-26"
+                  value="59.99"
                 >
                   $59.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -1617,7 +1643,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-27-test-id"
             description="The ultimate version of Mario Kart 8 with more racers, tracks, and features."
           >
@@ -1638,7 +1664,7 @@ exports[`catalogProducts should render correctly 1`] = `
               />
               <span
                 aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-archivo font-normal"
+                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
                 data-testid="ml-product-card-is-new-label-test-id-27"
               >
                 New
@@ -1648,13 +1674,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-27"
               >
                 Racing
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -1662,12 +1688,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Mario Kart 8 Deluxe
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-27"
+                  value="59.99"
                 >
                   $59.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -1683,7 +1710,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-28-test-id"
             description="Experience the next generation of basketball simulation."
           >
@@ -1707,13 +1734,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-28"
               >
                 Sports
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -1721,12 +1748,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   NBA 2K21
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-28"
+                  value="59.99"
                 >
                   $59.99
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -1742,7 +1770,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-29-test-id"
             description="A living, breathing online world where adventure awaits around every corner."
           >
@@ -1763,7 +1791,7 @@ exports[`catalogProducts should render correctly 1`] = `
               />
               <span
                 aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-archivo font-normal"
+                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
                 data-testid="ml-product-card-is-new-label-test-id-29"
               >
                 New
@@ -1773,13 +1801,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-29"
               >
                 MMORPG
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -1787,12 +1815,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Guild Wars 2
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-29"
+                  value="70"
                 >
                   $70.00
-                </span>
+                </data>
               </div>
             </div>
             <button
@@ -1808,7 +1837,7 @@ exports[`catalogProducts should render correctly 1`] = `
           class="h-full"
         >
           <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl h-full"
+            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
             data-testid="catalog-products-ml-product-card-30-test-id"
             description="An online multiplayer social deduction game set in a space-themed setting."
           >
@@ -1832,13 +1861,13 @@ exports[`catalogProducts should render correctly 1`] = `
               class="space-y-3"
             >
               <span
-                class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
                 data-testid="ml-product-card-genre-test-id-30"
               >
                 Indie
               </span>
               <div
-                class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
               >
                 <h2
                   class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -1846,12 +1875,13 @@ exports[`catalogProducts should render correctly 1`] = `
                 >
                   Among Us
                 </h2>
-                <span
+                <data
                   class="inline text-xl leading-6 text-center"
                   data-testid="ml-product-card-price-test-id-30"
+                  value="45"
                 >
                   $45.00
-                </span>
+                </data>
               </div>
             </div>
             <button

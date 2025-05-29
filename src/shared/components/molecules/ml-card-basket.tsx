@@ -37,20 +37,32 @@ export default function MlCardBasket(props: MlCardBasket) {
                     type="button"
                     aria-label="Remove Product from Basket"
                     className="cursor-pointer md:hidden md:pointer-events-none"
+                    data-testid={`ml-card-basket-remove-button-mobile-test-id-${id}`}
                 >
                     <XMark className="text-stroke-secondary" />
                 </button>
             </div>
 
             <div className="font-archivo w-full md:py-2">
-                <span className="mb-3 font-bold text-sm leading-4 tracking-normal text-neutral-500 uppercase block">{genre}</span>
+                <span
+                    className="mb-3 font-bold text-sm leading-4 tracking-normal text-neutral-500 uppercase block"
+                    data-testid={`ml-card-basket-genre-test-id-${id}`}
+                >
+                    {genre}
+                </span>
                 <div className="space-y-2 mb-6 md:mb-5">
-                    <h2 className="font-bold text-lg leading-5 tracking-sm text-gray-medium">{name}</h2>
-                    {description && <p className="font-normal text-base leading-5 tracking-normal text-neutral-500 whitespace-nowrap text-ellipsis overflow-hidden">{description}</p>}
+                    <h2
+                        className="font-bold text-lg leading-5 tracking-sm text-gray-medium"
+                        data-testid={`ml-card-basket-name-test-id-${id}`}
+                    >
+                        {name}
+                    </h2>
+                    {description && <p className="font-normal text-base leading-5 tracking-normal text-neutral-500 whitespace-nowrap text-ellipsis overflow-hidden" data-testid={`ml-card-basket-description-test-id-${id}`}>{description}</p>}
                 </div>
                 <data
                     className="w-full block text-right font-archivo font-bold text-lg leading-5 text-gray-medium tracking-sm pt-5"
                     value={price}
+                    data-testid={`ml-card-basket-price-test-id-${id}`}
                 >
                     {formatCurrency(price)}
                 </data>
@@ -60,6 +72,7 @@ export default function MlCardBasket(props: MlCardBasket) {
                 type="button"
                 aria-label="Remove Product from Basket"
                 className="md:cursor-pointer hidden pointer-events-none md:pointer-events-auto md:inline-block"
+                data-testid={`ml-card-basket-remove-button-desktop-test-id-${id}`}
             >
                 <XMark className="text-stroke-secondary" />
             </button>

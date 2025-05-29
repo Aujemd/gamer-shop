@@ -3,7 +3,7 @@
 exports[`mlProductCard should render correctly 1`] = `
 <DocumentFragment>
   <article
-    class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl "
+    class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo "
     data-testid="ml-product-card-test-id"
     description="An open-world, action-adventure story set in Night City."
   >
@@ -24,7 +24,7 @@ exports[`mlProductCard should render correctly 1`] = `
       />
       <span
         aria-label="New Product"
-        class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-archivo font-normal"
+        class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
         data-testid="ml-product-card-is-new-label-test-id-1"
       >
         New
@@ -34,13 +34,13 @@ exports[`mlProductCard should render correctly 1`] = `
       class="space-y-3"
     >
       <span
-        class="uppercase font-archivo font-bold text-base leading-4 text-neutral-500 tracking-normal block"
+        class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
         data-testid="ml-product-card-genre-test-id-1"
       >
         Action
       </span>
       <div
-        class="flex items-center justify-between font-archivo font-bold tracking-sm text-gray-medium"
+        class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
       >
         <h2
           class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
@@ -48,12 +48,13 @@ exports[`mlProductCard should render correctly 1`] = `
         >
           Cyberpunk 2077
         </h2>
-        <span
+        <data
           class="inline text-xl leading-6 text-center"
           data-testid="ml-product-card-price-test-id-1"
+          value="59.99"
         >
           $59.99
-        </span>
+        </data>
       </div>
     </div>
     <button
