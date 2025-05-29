@@ -22,8 +22,16 @@ export default async function Cart(): Promise<JSX.Element> {
                 Back to Catalog
             </AtLink>
             <CartHeader />
-            <div className="py-8 px-6">
-                <MlCardBasket {...allGames[0]} />
+            <div className="py-8 px-6 md:p-0">
+                {allGames.map(product => (
+                    <MlCardBasket
+
+                        {...product}
+                        key={product.id}
+
+                    />
+                ))}
+
             </div>
         </div>
     );
