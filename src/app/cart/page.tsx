@@ -25,7 +25,6 @@ export default async function Cart(): Promise<JSX.Element> {
             <div className="py-8 px-6 md:p-0">
                 {allGames.map(product => (
                     <MlCardBasket
-
                         {...product}
                         key={product.id}
 

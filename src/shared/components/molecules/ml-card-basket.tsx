@@ -57,7 +57,7 @@ export default function MlCardBasket(props: MlCardBasket) {
                     >
                         {name}
                     </h2>
-                    {description && <p className="font-normal text-base leading-5 tracking-normal text-neutral-500 whitespace-nowrap text-ellipsis overflow-hidden" data-testid={`ml-card-basket-description-test-id-${id}`}>{description}</p>}
+                    {description && <p className="font-normal text-base leading-5 tracking-normal text-neutral-500 " data-testid={`ml-card-basket-description-test-id-${id}`}>{description}</p>}
                 </div>
                 <data
                     className="w-full block text-right font-archivo font-bold text-lg leading-5 text-gray-medium tracking-sm pt-5"
