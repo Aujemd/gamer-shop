@@ -2,7 +2,7 @@ import type { JSX } from "react";
 
 import { CartHeader } from "@/cart";
 import { ArrowLeft } from "@/icons";
-import { AtLink, MlCardBasket } from "@/shared";
+import { AtLink, MlProductCardBag } from "@/shared";
 import { allGames } from "@/utils/endpoint";
 
 /**
@@ -22,7 +22,7 @@ export default async function Cart(): Promise<JSX.Element> {
                 Back to Catalog
             </AtLink>
             <CartHeader />
-            <div className="py-8 px-6 md:p-0">
+            {/* <div className="py-8 px-6 md:p-0">
                 {allGames.map(product => (
                     <MlCardBasket
                         {...product}
@@ -30,7 +30,11 @@ export default async function Cart(): Promise<JSX.Element> {
 
                     />
                 ))}
-
+            </div> */}
+            <div className="py-8 px-6">
+                <MlProductCardBag
+                    games={[allGames[0], allGames[1], allGames[2]]}
+                />
             </div>
         </div>
     );
