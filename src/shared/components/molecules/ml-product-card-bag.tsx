@@ -35,6 +35,7 @@ export default function MlProductCardBag(props: MlProductCardBag) {
                 </h3>
                 <h4 className="font-normal text-lg leading-6 tracking-sm">
                     {totalItems}
+                    {" "}
                     items
                 </h4>
             </div>
