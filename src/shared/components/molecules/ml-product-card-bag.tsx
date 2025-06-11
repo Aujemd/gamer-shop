@@ -23,13 +23,18 @@ export default function MlProductCardBag(props: MlProductCardBag) {
     return (
         <section
             className={`font-archivo border-half border-stroke-secondary rounded-lg py-6 px-4 md:py-8 md:px-6 ${className}`}
+            aria-labelledby="order-summary-title"
             {...rest}
         >
             <div className="space-y-3">
-                <h3 className="font-bold text-xl leading-6 tracking-sm md:text-2xl md:leading-7">Order Summary</h3>
+                <h3
+                    className="font-bold text-xl leading-6 tracking-sm md:text-2xl md:leading-7"
+                    id="order-summary-title"
+                >
+                    Order Summary
+                </h3>
                 <h4 className="font-normal text-lg leading-6 tracking-sm">
                     {totalItems}
-                    {" "}
                     items
                 </h4>
             </div>
@@ -41,6 +46,7 @@ export default function MlProductCardBag(props: MlProductCardBag) {
                         <data
                             className="font-normal text-lg leading-6 tracking-sm"
                             value={price}
+                            aria-label={`Price for ${name}: ${formatCurrency(price)}`}
                         >
                             {formatCurrency(price)}
                         </data>
@@ -50,7 +56,14 @@ export default function MlProductCardBag(props: MlProductCardBag) {
 
             <div className="mt-6 mb-5 flex items-center justify-between gap-0.5">
                 <h4 className="font-bold text-xl leading-6 tracking-sm">Order Total</h4>
-                <data className="font-bold text-xl leading-6 tracking-sm">{formattedTotal}</data>
+                <data
+                    value={orderTotal}
+                    className="font-bold text-xl leading-6 tracking-sm"
+                    aria-label={`Order total: ${formattedTotal}`}
+
+                >
+                    {formattedTotal}
+                </data>
             </div>
 
         </section>
