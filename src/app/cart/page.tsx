@@ -2,7 +2,7 @@ import type { JSX } from "react";
 
 import { CartHeader } from "@/cart";
 import { ArrowLeft } from "@/icons";
-import { AtLink, MlProductCardBag } from "@/shared";
+import { AtLink, MlCardBasket, OrOrderSummary } from "@/shared";
 import { allGames } from "@/utils/endpoint";
 
 /**
@@ -12,7 +12,6 @@ import { allGames } from "@/utils/endpoint";
 export default async function Cart(): Promise<JSX.Element> {
     return (
         <div className="max-w-desktop mx-auto">
-
             <AtLink
                 href="/"
                 aria-label="Back to Catalog"
@@ -22,17 +21,19 @@ export default async function Cart(): Promise<JSX.Element> {
                 Back to Catalog
             </AtLink>
             <CartHeader />
-            {/* <div className="py-8 px-6 md:p-0">
-                {allGames.map(product => (
-                    <MlCardBasket
-                        {...product}
-                        key={product.id}
+            <div className="space-y-12 px-6 pb-8 md:space-y-0 md:flex md:p-0 md:gap-20">
+                <ul className="w-full">
+                    {[allGames[0], allGames[1], allGames[2]].map(product => (
+                        <li key={product.id}>
+                            <MlCardBasket
+                                {...product}
 
-                    />
-                ))}
-            </div> */}
-            <div className="py-8 px-6">
-                <MlProductCardBag
+                            />
+                        </li>
+                    ))}
+                </ul>
+                <OrOrderSummary
+                    className="w-full md:max-w-[522px]"
                     games={[allGames[0], allGames[1], allGames[2]]}
                 />
             </div>
