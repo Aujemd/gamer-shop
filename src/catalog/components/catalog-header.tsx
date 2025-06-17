@@ -14,9 +14,13 @@ export default function CatalogHeader(props: CatalogHeaderProps) {
     const { className = "", filters, ...rest } = props;
 
     return (
-        <section {...rest} className={`py-8 px-6 border-b border-b-stroke-tertiary xl:px-0 xl:py-12 ${className}`}>
+        <section
+            {...rest}
+            className={`py-8 px-6 border-b border-b-stroke-tertiary xl:px-0 xl:py-12 ${className}`}
+            aria-labelledby="catalog-header-at-page-title-id"
+        >
             <div className="max-w-desktop mx-auto">
-                <AtPageTitle data-testid="catalog-header-at-page-title-test-id" className="text-left uppercase lg:normal-case">
+                <AtPageTitle data-testid="catalog-header-at-page-title-test-id" className="text-left uppercase lg:normal-case" id="catalog-header-at-page-title-id">
                     Top Sellers
                 </AtPageTitle>
                 <div className="mt-8 lg:mt-12 divide-stroke-secondary divide-x lg:flex lg:items-center lg:justify-end">
@@ -24,7 +28,11 @@ export default function CatalogHeader(props: CatalogHeaderProps) {
                     <MlDropdown id="catalog-header-genre-ml-dropdown" className=" py-4 pl-10" data-testid="catalog-header-genre-ml-dropdown-test-id">
                         {
                             filters.map(filter => (
-                                <option key={filter} value={filter}>
+                                <option
+                                    key={filter}
+                                    value={filter}
+                                    aria-label={filter}
+                                >
                                     {filter}
                                 </option>
                             ))
