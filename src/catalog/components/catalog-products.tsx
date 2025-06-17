@@ -2,7 +2,7 @@ import type { HTMLAttributes } from "react";
 
 import type { Game } from "@/utils/endpoint";
 
-import { AtButton, MlProductCard, OrProduct } from "@/shared";
+import { MlProductCard, OrProduct } from "@/shared";
 
 type CatalogProductsProps = {
     products: Game[];
@@ -35,13 +35,13 @@ export default function CatalogProducts(props: CatalogProductsProps) {
                     ))}
                 </OrProduct>
                 <div className="px-6 md:px-0 pb-8 md:pb-12">
-                    <AtButton
+                    {/* <AtButton
                         aria-label="See More Products"
                         className="py-4 uppercase text-white bg-cta-fill-primary text-sm w-full md:w-auto md:py-5 md:px-6 md:text-base"
                         data-testid="catalog-products-see-more-button-test-id"
                     >
                         See More
-                    </AtButton>
+                    </AtButton> */}
                 </div>
             </div>
         </section>

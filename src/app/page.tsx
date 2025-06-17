@@ -1,17 +1,19 @@
 import type { JSX } from "react";
 
 import { CatalogHeader, CatalogProducts } from "@/catalog";
-import { allGames } from "@/utils/endpoint";
+import { getGames } from "@/services";
 
 /**
  * Main page component of the application.
  * @returns The main page component.
  */
 export default async function Home(): Promise<JSX.Element> {
+    const { games, availableFilters } = await getGames();
+
     return (
         <>
-            <CatalogHeader />
-            <CatalogProducts products={allGames} />
+            <CatalogHeader filters={availableFilters} />
+            <CatalogProducts products={games} />
         </>
     );
 }
