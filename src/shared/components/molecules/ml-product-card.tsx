@@ -6,7 +6,7 @@ import type { Game } from "@/utils/endpoint";
 
 import { AtButton, formatCurrency } from "@/shared";
 
-type MlProductCard = Game & Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
+type MlProductCard = Game & { index: number } & Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
 
 /**
  * MlProductCard component for the application.
@@ -14,7 +14,7 @@ type MlProductCard = Game & Readonly<Omit<HTMLAttributes<HTMLElement>, "children
  * @returns The product card component.
  */
 export default function MlProductCard(props: MlProductCard) {
-    const { className = "", ...productData } = props;
+    const { className = "", index = 0, ...productData } = props;
     const { id, genre, image, name, price, isNew, ...rest } = productData;
 
     return (
@@ -29,7 +29,8 @@ export default function MlProductCard(props: MlProductCard) {
                     className="object-cover rounded-t-2xl"
                     fill
                     data-testid={`ml-product-card-image-test-id-${id}`}
-
+                    sizes="(max-width: 768px) 40vw, (max-width: 1200px) 33vw"
+                    priority={index < 3}
                 />
                 {
                     isNew && (

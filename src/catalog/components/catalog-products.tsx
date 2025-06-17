@@ -22,12 +22,14 @@ export default function CatalogProducts(props: CatalogProductsProps) {
         >
             <div className="max-w-desktop mx-auto">
                 <OrProduct className="pb-0">
-                    {products.map(product => (
+                    {products.map((product, index) => (
                         <li key={product.id} className="h-full">
                             <MlProductCard
                                 {...product}
+                                index={index}
                                 className="h-full"
                                 data-testid={`catalog-products-ml-product-card-${product.id}-test-id`}
+
                             />
                         </li>
                     ))}
