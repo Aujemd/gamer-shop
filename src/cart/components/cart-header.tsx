@@ -14,7 +14,7 @@ export default function CartHeader(props: CartHeaderProps) {
     const { className = "", ...rest } = props;
 
     return (
-        <section {...rest} className={`py-8 px-6 space-y-3 lg:px-0 lg:py-12 ${className}`}>
+        <section {...rest} className={`py-8 px-6 space-y-3 xl:px-0 xl:py-12 ${className}`}>
             <AtPageTitle data-testid="catalog-header-at-page-title-test-id" className="text-left">
                 Your Cart
             </AtPageTitle>

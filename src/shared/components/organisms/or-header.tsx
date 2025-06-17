@@ -15,7 +15,7 @@ export default function OrHeader(props: OrHeaderProps) {
     const { className = "", ...rest } = props;
     return (
         <header {...rest} className={`bg-surface-secondary ${className}`}>
-            <div className="px-6 py-5 flex items-center justify-between text-cta-fill-primary lg:max-w-desktop mx-auto lg:px-0">
+            <div className="px-6 py-5 flex items-center justify-between text-cta-fill-primary lg:max-w-desktop mx-auto xl:px-0">
                 <h1 className="font-area font-bold text-2xl leading-6 text-center tracking-sm">
                     <Link
                         href="/"

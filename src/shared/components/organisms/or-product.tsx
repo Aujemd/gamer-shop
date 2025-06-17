@@ -11,7 +11,7 @@ export default function OrProduct(props: OrProductProps) {
     return (
         <ul
             {...rest}
-            className={`grid grid-cols-1 gap-6 py-8 px-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 lg:pl-0 lg:pr-11 lg:py-12 items-stretch ${className}`}
+            className={`grid grid-cols-1 gap-6 py-8 px-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 xl:pl-0 xl:pr-11 xl:py-12 items-stretch ${className}`}
         >
             {children}
         </ul>

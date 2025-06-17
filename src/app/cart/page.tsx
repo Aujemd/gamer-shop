@@ -15,19 +15,19 @@ export default async function Cart(): Promise<JSX.Element> {
             <AtLink
                 href="/"
                 aria-label="Back to Catalog"
-                className="text-gray-medium flex items-center gap-2 py-4 px-6 lg:py-6 lg:px-0"
+                className="text-gray-medium flex items-center gap-2 py-4 px-6 xl:py-6 xl:px-0"
             >
                 <ArrowLeft />
                 Back to Catalog
             </AtLink>
             <CartHeader />
-            <div className="space-y-12 px-6 pb-8 md:space-y-0 md:flex md:p-0 md:gap-20">
+            <div className="space-y-12 px-6 pb-8 md:space-y-0 md:flex  md:gap-20  xl:px-0 xl:pb-12">
                 <ul className="w-full">
-                    {[allGames[0], allGames[1], allGames[2]].map(product => (
+                    {[allGames[0], allGames[1], allGames[2]].map((product, index) => (
                         <li key={product.id}>
                             <MlCardBasket
                                 {...product}
-
+                                className={[allGames[0], allGames[1], allGames[2]].length === index + 1 ? "border-none" : ""}
                             />
                         </li>
                     ))}
