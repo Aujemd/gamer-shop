@@ -1,8 +1,10 @@
+"use client";
 import type { HTMLAttributes } from "react";
 
 import type { Game } from "@/utils/endpoint";
 
 import { MlProductCard, OrProduct } from "@/shared";
+import { useStoredCart } from "@/shared/hooks";
 
 type CatalogProductsProps = {
     products: Game[];
@@ -16,6 +18,9 @@ type CatalogProductsProps = {
  */
 export default function CatalogProducts(props: CatalogProductsProps) {
     const { products, ...rest } = props;
+
+    const { addItemToCart, isItemInCart, removeItemFromCart } = useStoredCart();
+
     return (
         <section
             {...rest}
@@ -28,8 +33,11 @@ export default function CatalogProducts(props: CatalogProductsProps) {
                                 {...product}
                                 index={index}
                                 className="h-full"
+                                buttonLabel={isItemInCart(product.id) ? "Remove from Cart" : "Add to Cart"}
+                                onButtonClick={() => {
+                                    isItemInCart(product.id) ? removeItemFromCart(product.id) : addItemToCart(product);
+                                }}
                                 data-testid={`catalog-products-ml-product-card-${product.id}-test-id`}
-
                             />
                         </li>
                     ))}

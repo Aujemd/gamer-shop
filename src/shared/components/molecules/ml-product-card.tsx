@@ -1,3 +1,4 @@
+"use client";
 import type { HTMLAttributes } from "react";
 
 import Image from "next/image";
@@ -6,7 +7,7 @@ import type { Game } from "@/utils/endpoint";
 
 import { AtButton, formatCurrency } from "@/shared";
 
-type MlProductCard = Game & { index: number } & Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
+type MlProductCard = Game & { index: number; buttonLabel?: string; onButtonClick?: () => void } & Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
 
 /**
  * MlProductCard component for the application.
@@ -14,7 +15,7 @@ type MlProductCard = Game & { index: number } & Readonly<Omit<HTMLAttributes<HTM
  * @returns The product card component.
  */
 export default function MlProductCard(props: MlProductCard) {
-    const { className = "", index = 0, ...productData } = props;
+    const { className = "", index = 0, buttonLabel = "Click", onButtonClick, ...productData } = props;
     const { id, genre, image, name, price, isNew, ...rest } = productData;
 
     return (
@@ -68,11 +69,12 @@ export default function MlProductCard(props: MlProductCard) {
                 </div>
             </div>
             <AtButton
+                onClick={onButtonClick}
                 className="py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
                 aria-label={`add ${name} to cart`}
                 data-testid={`ml-product-card-button-${id}`}
             >
-                ADD TO CART
+                {buttonLabel}
             </AtButton>
         </article>
     );
