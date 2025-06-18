@@ -2,7 +2,7 @@ import type { HTMLAttributes } from "react";
 
 import { AtPageTitle } from "@/shared";
 
-type CartHeaderProps = Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
+type CartHeaderProps = { cartItemsCount: number } & Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
 
 /**
  * CartHeader component.
@@ -11,7 +11,7 @@ type CartHeaderProps = Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
  * @returns The cart header component.
  */
 export default function CartHeader(props: CartHeaderProps) {
-    const { className = "", ...rest } = props;
+    const { className = "", cartItemsCount = 0, ...rest } = props;
 
     return (
         <section {...rest} className={`py-8 px-6 space-y-3 xl:px-0 xl:py-12 ${className}`}>
@@ -22,7 +22,9 @@ export default function CartHeader(props: CartHeaderProps) {
                 className="font-archivo font-norma text-xl leading-6 tracking-sm lg:text-2xl lg:leading-7"
                 data-testid="cart-header-items-count-test-id"
             >
-                3 items
+                {cartItemsCount}
+                {" "}
+                items
             </p>
         </section>
     );

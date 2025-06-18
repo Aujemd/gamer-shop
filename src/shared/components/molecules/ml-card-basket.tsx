@@ -7,7 +7,7 @@ import type { Game } from "@/utils/endpoint";
 import { XMark } from "@/icons";
 import { formatCurrency } from "@/shared";
 
-type MlCardBasket = Game & Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
+type MlCardBasket = Game & { onRemoveButtonClick: () => void } & Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
 
 /**
  * MlCardBasket component for the application.
@@ -15,7 +15,7 @@ type MlCardBasket = Game & Readonly<Omit<HTMLAttributes<HTMLElement>, "children"
  * @returns The product card component.
  */
 export default function MlCardBasket(props: MlCardBasket) {
-    const { className = "", ...productData } = props;
+    const { className = "", onRemoveButtonClick, ...productData } = props;
     const { id, genre, image, name, price, isNew, description, ...rest } = productData;
 
     return (
@@ -38,6 +38,7 @@ export default function MlCardBasket(props: MlCardBasket) {
                     aria-label="Remove Product from Basket"
                     className="cursor-pointer md:hidden md:pointer-events-none"
                     data-testid={`ml-card-basket-remove-button-mobile-test-id-${id}`}
+                    onClick={onRemoveButtonClick}
                 >
                     <XMark className="text-stroke-secondary" />
                 </button>
@@ -73,6 +74,7 @@ export default function MlCardBasket(props: MlCardBasket) {
                 aria-label="Remove Product from Basket"
                 className="md:cursor-pointer hidden pointer-events-none md:pointer-events-auto md:inline-block"
                 data-testid={`ml-card-basket-remove-button-desktop-test-id-${id}`}
+                onClick={onRemoveButtonClick}
             >
                 <XMark className="text-stroke-secondary" />
             </button>

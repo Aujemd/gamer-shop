@@ -11,18 +11,15 @@ export const CART_ITEMS_KEY = "cartItems";
  * @returns An object containing the cart items, functions to add and remove items, and a check for item existence.
  */
 export function useStoredCart() {
-    const [cartItems, setCartItems] = useState<Game[]>([]);
-
-    useEffect(() => {
+    const [cartItems, setCartItems] = useState<Game[]>(() => {
         try {
             const storedCartItems = localStorage.getItem(CART_ITEMS_KEY);
-            if (storedCartItems)
-                setCartItems(JSON.parse(storedCartItems) as Game[]);
+            return storedCartItems ? JSON.parse(storedCartItems) : [];
         }
         catch {
-            setCartItems([]);
+            return [];
         }
-    }, []);
+    });
 
     useEffect(() => {
         localStorage.setItem(CART_ITEMS_KEY, JSON.stringify(cartItems));

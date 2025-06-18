@@ -1,15 +1,20 @@
+"use client";
 import type { JSX } from "react";
 
 import { CartHeader } from "@/cart";
 import { ArrowLeft } from "@/icons";
 import { AtLink, MlCardBasket, OrOrderSummary } from "@/shared";
-import { allGames } from "@/utils/endpoint";
+import { useStoredCart } from "@/shared/hooks";
 
 /**
  * Cart page component of the application.
  * @returns The cart page component.
  */
-export default async function Cart(): Promise<JSX.Element> {
+export default function Cart(): JSX.Element {
+    const { cartItems, removeItemFromCart } = useStoredCart();
+
+    const cartItemsCount = cartItems.length;
+
     return (
         <div className="max-w-desktop mx-auto">
             <AtLink
@@ -20,21 +25,22 @@ export default async function Cart(): Promise<JSX.Element> {
                 <ArrowLeft />
                 Back to Catalog
             </AtLink>
-            <CartHeader />
+            <CartHeader cartItemsCount={cartItemsCount} />
             <div className="space-y-12 px-6 pb-8 md:space-y-0 md:flex  md:gap-20  xl:px-0 xl:pb-12">
                 <ul className="w-full">
-                    {[allGames[0], allGames[1], allGames[2]].map((product, index) => (
+                    {cartItems.map((product, index) => (
                         <li key={product.id}>
                             <MlCardBasket
                                 {...product}
-                                className={[allGames[0], allGames[1], allGames[2]].length === index + 1 ? "border-none" : ""}
+                                className={cartItems.length === index + 1 ? "border-none" : ""}
+                                onRemoveButtonClick={() => removeItemFromCart(product.id)}
                             />
                         </li>
                     ))}
                 </ul>
                 <OrOrderSummary
                     className="w-full md:max-w-[522px]"
-                    games={[allGames[0], allGames[1], allGames[2]]}
+                    games={cartItems}
                 />
             </div>
         </div>
