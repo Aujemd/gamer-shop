@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 
 import { AtPageTitle, MlDropdown } from "@/shared";
 
-type CatalogHeaderProps = Readonly<Omit<HTMLAttributes<HTMLElement>, "children">> & { filters: string[] };
+type CatalogHeaderProps = Readonly<Omit<HTMLAttributes<HTMLElement>, "children">> & { filters: string[]; selectedFilter?: string };
 
 /**
  * CatalogHeader component.
@@ -14,13 +14,11 @@ type CatalogHeaderProps = Readonly<Omit<HTMLAttributes<HTMLElement>, "children">
  * @returns The catalog header component.
  */
 export default function CatalogHeader(props: CatalogHeaderProps) {
-    const { className = "", filters, ...rest } = props;
+    const { filters, className = "", selectedFilter = "", ...rest } = props;
 
     const router = useRouter();
 
     const handleDropdownChange = (e: ChangeEvent<HTMLSelectElement>) => {
-        console.log("xd");
-
         const selectedGenre = e.target.value;
         router.push(`/${selectedGenre}`);
     };
@@ -38,11 +36,11 @@ export default function CatalogHeader(props: CatalogHeaderProps) {
                 <div className="mt-8 lg:mt-12 divide-stroke-secondary divide-x lg:flex lg:items-center lg:justify-end">
                     <label htmlFor="catalog-header-genre-ml-dropdown" className="font-archivo font-bold text-xl leading-6 tracking-sm text-center pr-6" data-testid="catalog-header-genre-ml-dropdown-label-test-id">Genre</label>
                     <MlDropdown
+                        value={selectedFilter}
                         id="catalog-header-genre-ml-dropdown"
                         className=" py-4 pl-10"
                         data-testid="catalog-header-genre-ml-dropdown-test-id"
                         onChange={handleDropdownChange}
-
                     >
                         {
                             filters.map(filter => (
