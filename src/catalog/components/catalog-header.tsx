@@ -1,4 +1,7 @@
-import type { HTMLAttributes } from "react";
+"use client";
+import type { ChangeEvent, HTMLAttributes } from "react";
+
+import { useRouter } from "next/navigation";
 
 import { AtPageTitle, MlDropdown } from "@/shared";
 
@@ -13,6 +16,15 @@ type CatalogHeaderProps = Readonly<Omit<HTMLAttributes<HTMLElement>, "children">
 export default function CatalogHeader(props: CatalogHeaderProps) {
     const { className = "", filters, ...rest } = props;
 
+    const router = useRouter();
+
+    const handleDropdownChange = (e: ChangeEvent<HTMLSelectElement>) => {
+        console.log("xd");
+
+        const selectedGenre = e.target.value;
+        router.push(`/${selectedGenre}`);
+    };
+
     return (
         <section
             {...rest}
@@ -25,7 +37,13 @@ export default function CatalogHeader(props: CatalogHeaderProps) {
                 </AtPageTitle>
                 <div className="mt-8 lg:mt-12 divide-stroke-secondary divide-x lg:flex lg:items-center lg:justify-end">
                     <label htmlFor="catalog-header-genre-ml-dropdown" className="font-archivo font-bold text-xl leading-6 tracking-sm text-center pr-6" data-testid="catalog-header-genre-ml-dropdown-label-test-id">Genre</label>
-                    <MlDropdown id="catalog-header-genre-ml-dropdown" className=" py-4 pl-10" data-testid="catalog-header-genre-ml-dropdown-test-id">
+                    <MlDropdown
+                        id="catalog-header-genre-ml-dropdown"
+                        className=" py-4 pl-10"
+                        data-testid="catalog-header-genre-ml-dropdown-test-id"
+                        onChange={handleDropdownChange}
+
+                    >
                         {
                             filters.map(filter => (
                                 <option
@@ -35,9 +53,12 @@ export default function CatalogHeader(props: CatalogHeaderProps) {
                                 >
                                     {filter}
                                 </option>
+
                             ))
                         }
-                        <option value="all">All</option>
+
+                        <option value="">All</option>
+
                     </MlDropdown>
                 </div>
             </div>
