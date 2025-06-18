@@ -33,7 +33,7 @@ export default function CatalogProducts(props: CatalogProductsProps) {
                                 {...product}
                                 index={index}
                                 className="h-full"
-                                buttonLabel={isItemInCart(product.id) ? "Remove from Cart" : "Add to Cart"}
+                                buttonLabel={isItemInCart(product.id) ? "Remove" : "Add to Cart"}
                                 onButtonClick={() => {
                                     isItemInCart(product.id) ? removeItemFromCart(product.id) : addItemToCart(product);
                                 }}
