@@ -15,7 +15,7 @@ export default async function HomeFilteredByGenre({
     params: Promise<{ genre: string }>;
 }): Promise<JSX.Element> {
     const { genre } = await params;
-    const { games, availableFilters } = await getGames(genre);
+    const { games, availableFilters } = await getGames({ genre });
 
     return (
         <>

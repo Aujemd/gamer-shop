@@ -8,11 +8,11 @@ import type { Game } from "@/utils/endpoint";
 
 import { formatCurrency } from "@/shared";
 
-type MlProductCard = Game & { index: number; buttonLabel?: string; onButtonClick?: () => void } & Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
-
 const AtButton = dynamic(() => import("@/shared/components/atoms/at-button"), {
     ssr: false,
 });
+
+type MlProductCard = Game & { index: number; buttonLabel?: string; onButtonClick?: () => void } & Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
 
 /**
  * MlProductCard component for the application.
