@@ -9,9 +9,10 @@ import { useStoredCart } from "@/shared/hooks";
 import { useCatalogProducts } from "../hooks";
 
 type CatalogProductsProps = {
-    initialProducts: Game[];
+    genre?: string;
     totalPages: number;
     currentPage: number;
+    initialProducts: Game[];
 } & Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>; ;
 
 /**
@@ -21,13 +22,13 @@ type CatalogProductsProps = {
  * @returns The CatalogProducts component.
  */
 export default function CatalogProducts(props: CatalogProductsProps) {
-    const { initialProducts, totalPages, currentPage, ...rest } = props;
+    const { initialProducts, totalPages, currentPage, genre = "", ...rest } = props;
 
     const showMoreButton = totalPages > 1 && currentPage < totalPages;
 
     const { addItemToCart, isItemInCart, removeItemFromCart } = useStoredCart();
 
-    const { products, handleGetNextPage } = useCatalogProducts(initialProducts);
+    const { products, handleGetNextPage } = useCatalogProducts(initialProducts, genre);
 
     return (
         <section

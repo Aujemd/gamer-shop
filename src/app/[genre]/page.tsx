@@ -20,7 +20,7 @@ export default async function HomeFilteredByGenre({
     return (
         <>
             <CatalogHeader filters={availableFilters} selectedFilter={genre} />
-            <CatalogProducts initialProducts={games} totalPages={totalPages} currentPage={currentPage} />
+            <CatalogProducts initialProducts={games} totalPages={totalPages} currentPage={currentPage} genre={genre} />
         </>
     );
 }
