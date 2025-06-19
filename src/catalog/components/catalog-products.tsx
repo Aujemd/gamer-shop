@@ -3,11 +3,15 @@ import type { HTMLAttributes } from "react";
 
 import type { Game } from "@/utils/endpoint";
 
-import { MlProductCard, OrProduct } from "@/shared";
+import { AtButton, MlProductCard, OrProduct } from "@/shared";
 import { useStoredCart } from "@/shared/hooks";
 
+import { useCatalogProducts } from "../hooks";
+
 type CatalogProductsProps = {
-    products: Game[];
+    initialProducts: Game[];
+    totalPages: number;
+    currentPage: number;
 } & Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>; ;
 
 /**
@@ -17,9 +21,13 @@ type CatalogProductsProps = {
  * @returns The CatalogProducts component.
  */
 export default function CatalogProducts(props: CatalogProductsProps) {
-    const { products, ...rest } = props;
+    const { initialProducts, totalPages, currentPage, ...rest } = props;
+
+    const showMoreButton = totalPages > 1 && currentPage < totalPages;
 
     const { addItemToCart, isItemInCart, removeItemFromCart } = useStoredCart();
+
+    const { products, handleGetNextPage } = useCatalogProducts(initialProducts);
 
     return (
         <section
@@ -42,15 +50,22 @@ export default function CatalogProducts(props: CatalogProductsProps) {
                         </li>
                     ))}
                 </OrProduct>
-                <div className="px-6 md:px-0 pb-8 md:pb-12">
-                    {/* <AtButton
-                        aria-label="See More Products"
-                        className="py-4 uppercase text-white bg-cta-fill-primary text-sm w-full md:w-auto md:py-5 md:px-6 md:text-base"
-                        data-testid="catalog-products-see-more-button-test-id"
-                    >
-                        See More
-                    </AtButton> */}
-                </div>
+                {
+                    showMoreButton
+                    && (
+                        <div className="px-6 md:px-0 pb-8 md:pb-12">
+                            <AtButton
+                                aria-label="See More Products"
+                                className="py-4 uppercase text-white bg-cta-fill-primary text-sm w-full md:w-auto md:py-5 md:px-6 md:text-base"
+                                data-testid="catalog-products-see-more-button-test-id"
+                                onClick={handleGetNextPage}
+                                disabled={currentPage >= totalPages}
+                            >
+                                See More
+                            </AtButton>
+                        </div>
+                    )
+                }
             </div>
         </section>
     );

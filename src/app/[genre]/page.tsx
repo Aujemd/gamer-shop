@@ -15,12 +15,12 @@ export default async function HomeFilteredByGenre({
     params: Promise<{ genre: string }>;
 }): Promise<JSX.Element> {
     const { genre } = await params;
-    const { games, availableFilters } = await getGames({ genre });
+    const { games, totalPages, currentPage, availableFilters } = await getGames({ genre });
 
     return (
         <>
             <CatalogHeader filters={availableFilters} selectedFilter={genre} />
-            <CatalogProducts products={games} />
+            <CatalogProducts initialProducts={games} totalPages={totalPages} currentPage={currentPage} />
         </>
     );
 }
