@@ -1,5 +1,7 @@
 import type { JSX } from "react";
 
+import { Suspense } from "react";
+
 import { CatalogHeader, CatalogProducts, CatalogProvider } from "@/catalog";
 
 /**
@@ -11,7 +13,9 @@ export default async function Home(): Promise<JSX.Element> {
 
         <CatalogProvider>
             <CatalogHeader />
-            <CatalogProducts />
+            <Suspense fallback={<div className="mt-8 lg:mt-12">Loading products...</div>}>
+                <CatalogProducts />
+            </Suspense>
         </CatalogProvider>
 
     );

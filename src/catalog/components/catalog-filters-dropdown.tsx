@@ -8,9 +8,8 @@ import { MlDropdown } from "@/shared";
  * @returns The catalog filters dropdown component.
  */
 export default function CatalogFiltersDropdown() {
-    const { selectedFilter, handleDropdownChange } = useCatalogFiltersDropdown();
-
     const { availableFilters } = useCatalog();
+    const { selectedFilter, handleDropdownChange } = useCatalogFiltersDropdown();
 
     return (
         <div className="mt-8 lg:mt-12 divide-stroke-secondary divide-x lg:flex lg:items-center lg:justify-end">

@@ -1,5 +1,7 @@
 import type { HTMLAttributes } from "react";
 
+import { Suspense } from "react";
+
 import { AtPageTitle } from "@/shared";
 
 import CatalogFiltersDropdown from "./catalog-filters-dropdown";
@@ -25,7 +27,9 @@ export default function CatalogHeader(props: CatalogHeaderProps) {
                 <AtPageTitle data-testid="catalog-header-at-page-title-test-id" className="text-left uppercase lg:normal-case" id="catalog-header-at-page-title-id">
                     Top Sellers
                 </AtPageTitle>
-                <CatalogFiltersDropdown />
+                <Suspense fallback={<div className="mt-8 lg:mt-12">Loading filters...</div>}>
+                    <CatalogFiltersDropdown />
+                </Suspense>
             </div>
         </section>
     );
