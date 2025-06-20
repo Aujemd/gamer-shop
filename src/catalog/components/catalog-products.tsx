@@ -1,19 +1,11 @@
 "use client";
 import type { HTMLAttributes } from "react";
 
-import type { Game } from "@/utils/endpoint";
-
 import { useStoredCart } from "@/cart/hooks";
+import { useCatalog } from "@/catalog";
 import { AtButton, MlProductCard, OrProduct } from "@/shared";
 
-import { useCatalogProducts } from "../hooks";
-
-type CatalogProductsProps = {
-    genre?: string;
-    totalPages: number;
-    currentPage: number;
-    initialProducts: Game[];
-} & Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>; ;
+type CatalogProductsProps = Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>; ;
 
 /**
  * CatalogProducts component.
@@ -22,13 +14,13 @@ type CatalogProductsProps = {
  * @returns The CatalogProducts component.
  */
 export default function CatalogProducts(props: CatalogProductsProps) {
-    const { initialProducts, totalPages, currentPage, ...rest } = props;
+    const { ...rest } = props;
+
+    const { totalPages, currentPage, games: products } = useCatalog();
 
     const showMoreButton = totalPages > 1 && currentPage < totalPages;
 
     const { addItemToCart, isItemInCart, removeItemFromCart } = useStoredCart();
-
-    const { products, handleGetNextPage } = useCatalogProducts(initialProducts);
 
     return (
         <section
@@ -59,7 +51,6 @@ export default function CatalogProducts(props: CatalogProductsProps) {
                                 aria-label="See More Products"
                                 className="py-4 uppercase text-white bg-cta-fill-primary text-sm w-full md:w-auto md:py-5 md:px-6 md:text-base"
                                 data-testid="catalog-products-see-more-button-test-id"
-                                onClick={handleGetNextPage}
                                 disabled={currentPage >= totalPages}
                             >
                                 See More
