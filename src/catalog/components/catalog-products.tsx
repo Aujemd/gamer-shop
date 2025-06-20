@@ -22,13 +22,13 @@ type CatalogProductsProps = {
  * @returns The CatalogProducts component.
  */
 export default function CatalogProducts(props: CatalogProductsProps) {
-    const { initialProducts, totalPages, currentPage, genre = "", ...rest } = props;
+    const { initialProducts, totalPages, currentPage, ...rest } = props;
 
     const showMoreButton = totalPages > 1 && currentPage < totalPages;
 
     const { addItemToCart, isItemInCart, removeItemFromCart } = useStoredCart();
 
-    const { products, handleGetNextPage } = useCatalogProducts(initialProducts, genre);
+    const { products, handleGetNextPage } = useCatalogProducts(initialProducts);
 
     return (
         <section
