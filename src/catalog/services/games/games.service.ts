@@ -1,4 +1,4 @@
-import type { Game } from "@/utils/endpoint";
+import type { GetGameResponseType } from "./types";
 
 const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 const apiGamesEndpoint = "/games";
@@ -9,7 +9,7 @@ const apiGamesEndpoint = "/games";
  * @returns A promise that resolves to an object containing the games, available filters, total pages, and current page.
  * @throws {Error} If the fetch operation fails or the response is not ok.
  */
-export async function getGames(query = {}): Promise<{ games: Game[]; availableFilters: string[]; totalPages: number; currentPage: number }> {
+export async function getGames(query = {}): Promise<GetGameResponseType> {
     const handleQuery = new URLSearchParams(query).toString();
 
     const parsedQuery = handleQuery ? `?${handleQuery}` : "";

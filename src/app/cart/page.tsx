@@ -2,9 +2,9 @@
 import type { JSX } from "react";
 
 import { CartHeader } from "@/cart";
+import { useStoredCart } from "@/cart/hooks";
 import { ArrowLeft } from "@/icons";
 import { AtLink, MlCardBasket, OrOrderSummary } from "@/shared";
-import { useStoredCart } from "@/shared/hooks";
 
 /**
  * Cart page component of the application.

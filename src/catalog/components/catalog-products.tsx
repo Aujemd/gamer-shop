@@ -3,8 +3,8 @@ import type { HTMLAttributes } from "react";
 
 import type { Game } from "@/utils/endpoint";
 
+import { useStoredCart } from "@/cart/hooks";
 import { AtButton, MlProductCard, OrProduct } from "@/shared";
-import { useStoredCart } from "@/shared/hooks";
 
 import { useCatalogProducts } from "../hooks";
 
