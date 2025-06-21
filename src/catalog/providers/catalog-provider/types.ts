@@ -1,3 +1,5 @@
 import type { GetGameResponseType } from "@/catalog/services";
 
-export type CatalogContextType = GetGameResponseType;
+export type CatalogContextType = GetGameResponseType & {
+    handleGetNextPage: () => void;
+};

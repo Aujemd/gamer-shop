@@ -16,7 +16,7 @@ type CatalogProductsProps = Readonly<Omit<HTMLAttributes<HTMLElement>, "children
 export default function CatalogProducts(props: CatalogProductsProps) {
     const { ...rest } = props;
 
-    const { totalPages, currentPage, games: products } = useCatalog();
+    const { totalPages, currentPage, games: products, handleGetNextPage } = useCatalog();
 
     const showMoreButton = totalPages > 1 && currentPage < totalPages;
 
@@ -48,6 +48,7 @@ export default function CatalogProducts(props: CatalogProductsProps) {
                     && (
                         <div className="px-6 md:px-0 pb-8 md:pb-12">
                             <AtButton
+                                onClick={handleGetNextPage}
                                 aria-label="See More Products"
                                 className="py-4 uppercase text-white bg-cta-fill-primary text-sm w-full md:w-auto md:py-5 md:px-6 md:text-base"
                                 data-testid="catalog-products-see-more-button-test-id"

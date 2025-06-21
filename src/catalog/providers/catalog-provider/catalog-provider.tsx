@@ -1,5 +1,5 @@
 "use client";
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useMemo, useState } from "react";
 
 import type { CatalogContextType } from "@/catalog";
 
@@ -8,11 +8,14 @@ import { getGames } from "@/catalog/services";
 export const catalogContextDefaultValue: CatalogContextType = {
     games: [],
     totalPages: 0,
-    currentPage: 0,
+    currentPage: 1,
     availableFilters: [],
+    handleGetNextPage: () => {},
 };
 
 const CatalogContext = createContext<CatalogContextType>(catalogContextDefaultValue);
+
+CatalogContext.displayName = "CatalogContext";
 
 /**
  * Custom hook to access the catalog context.
@@ -39,27 +42,43 @@ export function CatalogProvider({ children }: { readonly children: React.ReactNo
 
     const fetchGames = async () => {
         try {
-            const response = await getGames();
+            const { currentPage } = catalogState;
 
-            setCatalogState(prevState => ({
-                ...response,
-                games: [
-                    ...(prevState && Array.isArray(prevState.games) ? prevState.games : []),
-                    ...(Array.isArray(response.games) ? response.games : []),
-                ],
-            }));
+            const response = await getGames({ page: currentPage });
+
+            setCatalogState(({ currentPage, games: prevGames, ...prevState }) => {
+                const currentIds = new Set(prevGames.map(game => game.id));
+
+                const newGames = response.games.filter(game => !currentIds.has(game.id));
+
+                return {
+                    ...prevState,
+                    ...response,
+                    currentPage,
+                    games: [...prevGames, ...newGames],
+                };
+            });
         }
         catch (e: any) {
             console.error("Failed to fetch games:", e);
         }
     };
 
+    const handleGetNextPage = () => {
+        setCatalogState(prevState => ({
+            ...prevState,
+            currentPage: prevState.currentPage + 1,
+        }));
+    };
+
+    const catalogContextValue = useMemo(() => ({ ...catalogState, handleGetNextPage }), [catalogState]);
+
     useEffect(() => {
         fetchGames();
-    }, []);
+    }, [catalogState.currentPage]);
 
     return (
-        <CatalogContext.Provider value={catalogState}>
+        <CatalogContext.Provider value={catalogContextValue}>
             {children}
         </CatalogContext.Provider>
     );
