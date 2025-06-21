@@ -1,5 +1,6 @@
 "use client";
-import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 
 import type { CatalogContextType } from "@/catalog";
 
@@ -7,10 +8,12 @@ import { getGames } from "@/catalog/services";
 
 export const catalogContextDefaultValue: CatalogContextType = {
     games: [],
+    genre: "",
     totalPages: 0,
     currentPage: 1,
     availableFilters: [],
     handleGetNextPage: () => {},
+    handleGetByGenrePage: () => {},
 };
 
 const CatalogContext = createContext<CatalogContextType>(catalogContextDefaultValue);
@@ -38,13 +41,22 @@ export function useCatalog() {
  * @returns The CatalogContext provider with game data and loading/error states.
  */
 export function CatalogProvider({ children }: { readonly children: React.ReactNode }) {
-    const [catalogState, setCatalogState] = useState<CatalogContextType>(catalogContextDefaultValue);
+    const searchParams = useSearchParams();
+
+    const selectedGenre = searchParams.get("genre") ?? "";
+
+    const [catalogState, setCatalogState] = useState<CatalogContextType>({ ...catalogContextDefaultValue, genre: selectedGenre });
 
     const fetchGames = async () => {
         try {
-            const { currentPage } = catalogState;
+            const { currentPage, genre } = catalogState;
 
-            const response = await getGames({ page: currentPage });
+            const getGamesParams = {
+                ...(currentPage && { page: currentPage }),
+                ...(genre && { genre }),
+            };
+
+            const response = await getGames(getGamesParams);
 
             setCatalogState(({ currentPage, games: prevGames, ...prevState }) => {
                 const currentIds = new Set(prevGames.map(game => game.id));
@@ -64,18 +76,27 @@ export function CatalogProvider({ children }: { readonly children: React.ReactNo
         }
     };
 
-    const handleGetNextPage = () => {
+    const handleGetNextPage = useCallback(() => {
         setCatalogState(prevState => ({
             ...prevState,
             currentPage: prevState.currentPage + 1,
         }));
-    };
+    }, []);
 
-    const catalogContextValue = useMemo(() => ({ ...catalogState, handleGetNextPage }), [catalogState]);
+    const handleGetByGenrePage = useCallback((genre: string) => {
+        setCatalogState(prevState => ({
+            ...prevState,
+            genre,
+            games: [],
+            currentPage: 1,
+        }));
+    }, []);
+
+    const catalogContextValue = useMemo(() => ({ ...catalogState, handleGetNextPage, handleGetByGenrePage }), [catalogState, handleGetNextPage, handleGetByGenrePage]);
 
     useEffect(() => {
         fetchGames();
-    }, [catalogState.currentPage]);
+    }, [catalogState.currentPage, catalogState.genre]);
 
     return (
         <CatalogContext.Provider value={catalogContextValue}>

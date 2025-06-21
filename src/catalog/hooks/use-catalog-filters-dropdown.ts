@@ -4,6 +4,8 @@ import type { ChangeEvent } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useCallback } from "react";
 
+import { useCatalog } from "@/catalog";
+
 /**
  * Custom hook for managing catalog filters dropdown.
  * Provides functionality to handle filter selection and update the URL query parameters.
@@ -13,8 +15,7 @@ export function useCatalogFiltersDropdown() {
     const router = useRouter();
     const pathname = usePathname();
     const searchParams = useSearchParams();
-
-    const selectedFilter = searchParams.get("genre") ?? "";
+    const { handleGetByGenrePage } = useCatalog();
 
     const createQueryString = useCallback(
         (name: string, value: string) => {
@@ -28,11 +29,11 @@ export function useCatalogFiltersDropdown() {
 
     const handleDropdownChange = (e: ChangeEvent<HTMLSelectElement>) => {
         const selectedGenre = e.target.value;
-        router.push(`${pathname}?${createQueryString("genre", selectedGenre)}`);
+        router.replace(`${pathname}?${createQueryString("genre", selectedGenre)}`);
+        handleGetByGenrePage(selectedGenre);
     };
 
     return {
-        selectedFilter,
         createQueryString,
         handleDropdownChange,
     };
