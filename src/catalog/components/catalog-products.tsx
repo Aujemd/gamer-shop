@@ -19,7 +19,7 @@ export default function CatalogProducts(props: CatalogProductsProps) {
 
     const { totalPages, currentPage, games: products, isLoading, handleGetNextPage } = useCatalog();
 
-    const showMoreButton = totalPages > 1 && currentPage < totalPages && products.length > 0;
+    const showMoreButton = totalPages > 1 && currentPage < totalPages;
 
     const { addItemToCart, isItemInCart, removeItemFromCart } = useStoredCart();
 
@@ -28,7 +28,7 @@ export default function CatalogProducts(props: CatalogProductsProps) {
             {...rest}
         >
             <div className="max-w-desktop mx-auto">
-                <OrProduct className="pb-0">
+                <OrProduct className={showMoreButton ? "pb-0" : ""}>
                     {products.map((product, index) => (
                         <li key={product.id} className="h-full">
                             <MlProductCard
