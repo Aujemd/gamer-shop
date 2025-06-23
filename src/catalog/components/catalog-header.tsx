@@ -2,6 +2,7 @@ import type { HTMLAttributes } from "react";
 
 import { Suspense } from "react";
 
+import { LoadingIcon } from "@/icons";
 import { AtPageTitle } from "@/shared";
 
 import CatalogFiltersDropdown from "./catalog-filters-dropdown";
@@ -27,7 +28,7 @@ export default function CatalogHeader(props: CatalogHeaderProps) {
                 <AtPageTitle data-testid="catalog-header-at-page-title-test-id" className="text-left uppercase lg:normal-case" id="catalog-header-at-page-title-id">
                     Top Sellers
                 </AtPageTitle>
-                <Suspense fallback={<div className="mt-8 lg:mt-12">Loading filters...</div>}>
+                <Suspense fallback={<LoadingIcon className="w-8 fill-cta-fill-primary mx-auto my-6" />}>
                     <CatalogFiltersDropdown />
                 </Suspense>
             </div>

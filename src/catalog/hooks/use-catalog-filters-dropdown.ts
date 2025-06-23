@@ -29,7 +29,11 @@ export function useCatalogFiltersDropdown() {
 
     const handleDropdownChange = (e: ChangeEvent<HTMLSelectElement>) => {
         const selectedGenre = e.target.value;
-        router.replace(`${pathname}?${createQueryString("genre", selectedGenre)}`);
+
+        const getGetByGenrePage = selectedGenre ? `${pathname}?${createQueryString("genre", selectedGenre)}` : pathname;
+
+        router.replace(getGetByGenrePage);
+
         handleGetByGenrePage(selectedGenre);
     };
 

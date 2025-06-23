@@ -3,6 +3,7 @@ import type { JSX } from "react";
 import { Suspense } from "react";
 
 import { CatalogHeader, CatalogProducts, CatalogProvider } from "@/catalog";
+import { LoadingIcon } from "@/icons";
 
 /**
  * Main page component of the application.
@@ -13,7 +14,7 @@ export default async function Home(): Promise<JSX.Element> {
 
         <CatalogProvider>
             <CatalogHeader />
-            <Suspense fallback={<div className="mt-8 lg:mt-12">Loading products...</div>}>
+            <Suspense fallback={<LoadingIcon className="w-8 fill-cta-fill-primary mx-auto my-6" />}>
                 <CatalogProducts />
             </Suspense>
         </CatalogProvider>
