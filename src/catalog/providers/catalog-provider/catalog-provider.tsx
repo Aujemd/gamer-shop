@@ -11,6 +11,7 @@ export const catalogContextDefaultValue: CatalogContextType = {
     genre: "",
     totalPages: 0,
     currentPage: 1,
+    isLoading: true,
     availableFilters: [],
     handleGetNextPage: () => {},
     handleGetByGenrePage: () => {},
@@ -48,6 +49,7 @@ export function CatalogProvider({ children }: { readonly children: React.ReactNo
     const [catalogState, setCatalogState] = useState<CatalogContextType>({ ...catalogContextDefaultValue, genre: selectedGenre });
 
     const fetchGames = async () => {
+        setCatalogState(prevState => ({ ...prevState, isLoading: true }));
         try {
             const { currentPage, genre } = catalogState;
 
@@ -73,6 +75,9 @@ export function CatalogProvider({ children }: { readonly children: React.ReactNo
         }
         catch (e: any) {
             console.error("Failed to fetch games:", e);
+        }
+        finally {
+            setCatalogState(prevState => ({ ...prevState, isLoading: false }));
         }
     };
 

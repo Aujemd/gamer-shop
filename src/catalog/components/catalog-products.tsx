@@ -3,6 +3,7 @@ import type { HTMLAttributes } from "react";
 
 import { useStoredCart } from "@/cart/hooks";
 import { useCatalog } from "@/catalog";
+import { LoadingIcon } from "@/icons";
 import { AtButton, MlProductCard, OrProduct } from "@/shared";
 
 type CatalogProductsProps = Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>; ;
@@ -16,9 +17,9 @@ type CatalogProductsProps = Readonly<Omit<HTMLAttributes<HTMLElement>, "children
 export default function CatalogProducts(props: CatalogProductsProps) {
     const { ...rest } = props;
 
-    const { totalPages, currentPage, games: products, handleGetNextPage } = useCatalog();
+    const { totalPages, currentPage, games: products, isLoading, handleGetNextPage } = useCatalog();
 
-    const showMoreButton = totalPages > 1 && currentPage < totalPages;
+    const showMoreButton = totalPages > 1 && currentPage < totalPages && products.length > 0;
 
     const { addItemToCart, isItemInCart, removeItemFromCart } = useStoredCart();
 
@@ -43,10 +44,11 @@ export default function CatalogProducts(props: CatalogProductsProps) {
                         </li>
                     ))}
                 </OrProduct>
+                {isLoading && <LoadingIcon className="w-8 fill-cta-fill-primary mx-auto my-6" />}
                 {
                     showMoreButton
                     && (
-                        <div className="px-6 md:px-0 pb-8 md:pb-12">
+                        <div className="px-6 xl:px-0 pb-8 xl:pb-12">
                             <AtButton
                                 onClick={handleGetNextPage}
                                 aria-label="See More Products"
