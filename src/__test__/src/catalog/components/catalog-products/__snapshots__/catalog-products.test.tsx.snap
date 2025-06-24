@@ -2,1909 +2,210 @@
 
 exports[`catalogProducts should render correctly 1`] = `
 <DocumentFragment>
-  <section>
+  <section
+    products="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+  >
     <div
       class="max-w-desktop mx-auto"
     >
       <ul
-        class="grid grid-cols-1 gap-6 py-8 px-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 lg:pl-0 lg:pr-11 lg:py-12 items-stretch pb-0"
+        class="grid grid-cols-1 gap-6 py-8 px-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 xl:pl-0 xl:pr-11 xl:py-12 items-stretch "
+      />
+      <svg
+        class="w-8 fill-cta-fill-primary mx-auto my-6"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-1-test-id"
-            description="An open-world, action-adventure story set in Night City."
+        <g>
+          <circle
+            cx="12"
+            cy="3"
+            r="1"
           >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Cyberpunk 2077"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-1"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-              <span
-                aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
-                data-testid="ml-product-card-is-new-label-test-id-1"
-              >
-                New
-              </span>
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-1"
-              >
-                Action
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-1"
-                >
-                  Cyberpunk 2077
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-1"
-                  value="59.99"
-                >
-                  $59.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Cyberpunk 2077 to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-1"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-2-test-id"
-            description="A story-driven, next-generation open world role-playing game."
+            <animate
+              attributeName="r"
+              begin="0;spinner_tKsu.end-0.5s"
+              calcMode="spline"
+              dur="0.6s"
+              id="spinner_7Z73"
+              keySplines=".27,.42,.37,.99;.53,0,.61,.73"
+              values="1;2;1"
+            />
+          </circle>
+          <circle
+            cx="16.50"
+            cy="4.21"
+            r="1"
           >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="The Witcher 3: Wild Hunt"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-2"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fthewitcher3.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fthewitcher3.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fthewitcher3.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fthewitcher3.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fthewitcher3.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fthewitcher3.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fthewitcher3.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fthewitcher3.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fthewitcher3.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-2"
-              >
-                RPG
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-2"
-                >
-                  The Witcher 3: Wild Hunt
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-2"
-                  value="39.99"
-                >
-                  $39.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add The Witcher 3: Wild Hunt to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-2"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-3-test-id"
-            description="An epic adventure that breaks boundaries in the Zelda series."
+            <animate
+              attributeName="r"
+              begin="spinner_7Z73.begin+0.1s"
+              calcMode="spline"
+              dur="0.6s"
+              id="spinner_Wd87"
+              keySplines=".27,.42,.37,.99;.53,0,.61,.73"
+              values="1;2;1"
+            />
+          </circle>
+          <circle
+            cx="7.50"
+            cy="4.21"
+            r="1"
           >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="The Legend of Zelda: Breath of the Wild"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-3"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fzeldabotw.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fzeldabotw.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fzeldabotw.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fzeldabotw.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fzeldabotw.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fzeldabotw.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fzeldabotw.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fzeldabotw.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fzeldabotw.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-              <span
-                aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
-                data-testid="ml-product-card-is-new-label-test-id-3"
-              >
-                New
-              </span>
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-3"
-              >
-                Adventure
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-3"
-                >
-                  The Legend of Zelda: Breath of the Wild
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-3"
-                  value="59.99"
-                >
-                  $59.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add The Legend of Zelda: Breath of the Wild to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-3"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-4-test-id"
-            description="An action-adventure game set in the sprawling city of Los Santos."
+            <animate
+              attributeName="r"
+              begin="spinner_9Qlc.begin+0.1s"
+              calcMode="spline"
+              dur="0.6s"
+              id="spinner_tKsu"
+              keySplines=".27,.42,.37,.99;.53,0,.61,.73"
+              values="1;2;1"
+            />
+          </circle>
+          <circle
+            cx="19.79"
+            cy="7.50"
+            r="1"
           >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Grand Theft Auto V"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-4"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fgta5.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fgta5.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fgta5.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fgta5.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fgta5.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fgta5.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fgta5.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fgta5.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fgta5.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-4"
-              >
-                Action
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-4"
-                >
-                  Grand Theft Auto V
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-4"
-                  value="29.99"
-                >
-                  $29.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Grand Theft Auto V to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-4"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-5-test-id"
-            description="A fast-paced, thrilling shooter where you battle demons."
+            <animate
+              attributeName="r"
+              begin="spinner_Wd87.begin+0.1s"
+              calcMode="spline"
+              dur="0.6s"
+              id="spinner_lMMO"
+              keySplines=".27,.42,.37,.99;.53,0,.61,.73"
+              values="1;2;1"
+            />
+          </circle>
+          <circle
+            cx="4.21"
+            cy="7.50"
+            r="1"
           >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="DOOM Eternal"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-5"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fdoometernal.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fdoometernal.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fdoometernal.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fdoometernal.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fdoometernal.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fdoometernal.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fdoometernal.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fdoometernal.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fdoometernal.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-5"
-              >
-                Shooter
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-5"
-                >
-                  DOOM Eternal
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-5"
-                  value="59.99"
-                >
-                  $59.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add DOOM Eternal to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-5"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-6-test-id"
-            description="A life simulation game where you control the rich and entertaining moments of your Sims' lives."
+            <animate
+              attributeName="r"
+              begin="spinner_Khxv.begin+0.1s"
+              calcMode="spline"
+              dur="0.6s"
+              id="spinner_9Qlc"
+              keySplines=".27,.42,.37,.99;.53,0,.61,.73"
+              values="1;2;1"
+            />
+          </circle>
+          <circle
+            cx="21.00"
+            cy="12.00"
+            r="1"
           >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="The Sims 4"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-6"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fthesims4.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fthesims4.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fthesims4.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fthesims4.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fthesims4.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fthesims4.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fthesims4.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fthesims4.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fthesims4.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-6"
-              >
-                Simulation
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-6"
-                >
-                  The Sims 4
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-6"
-                  value="39.99"
-                >
-                  $39.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add The Sims 4 to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-6"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-7-test-id"
-            description="Gears of War is an acclaimed third-person shooter video game focused on humanity's battle against the terrifying Locust Horde"
+            <animate
+              attributeName="r"
+              begin="spinner_lMMO.begin+0.1s"
+              calcMode="spline"
+              dur="0.6s"
+              id="spinner_5L9t"
+              keySplines=".27,.42,.37,.99;.53,0,.61,.73"
+              values="1;2;1"
+            />
+          </circle>
+          <circle
+            cx="3.00"
+            cy="12.00"
+            r="1"
           >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Gear Of War"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-7"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fgofwar.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fgofwar.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fgofwar.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fgofwar.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fgofwar.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fgofwar.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fgofwar.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fgofwar.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fgofwar.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-              <span
-                aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
-                data-testid="ml-product-card-is-new-label-test-id-7"
-              >
-                New
-              </span>
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-7"
-              >
-                Action
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-7"
-                >
-                  Gear Of War
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-7"
-                  value="59.99"
-                >
-                  $59.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Gear Of War to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-7"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-8-test-id"
-            description="An open world racing game set in a fictional representation of the United Kingdom."
+            <animate
+              attributeName="r"
+              begin="spinner_ld6P.begin+0.1s"
+              calcMode="spline"
+              dur="0.6s"
+              id="spinner_Khxv"
+              keySplines=".27,.42,.37,.99;.53,0,.61,.73"
+              values="1;2;1"
+            />
+          </circle>
+          <circle
+            cx="19.79"
+            cy="16.50"
+            r="1"
           >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Forza Horizon 4"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-8"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fforzahorizon4.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fforzahorizon4.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fforzahorizon4.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fforzahorizon4.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fforzahorizon4.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fforzahorizon4.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fforzahorizon4.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fforzahorizon4.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fforzahorizon4.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-8"
-              >
-                Racing
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-8"
-                >
-                  Forza Horizon 4
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-8"
-                  value="49.99"
-                >
-                  $49.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Forza Horizon 4 to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-8"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-9-test-id"
-            description="The latest installment in the world-renowned football simulation series."
+            <animate
+              attributeName="r"
+              begin="spinner_5L9t.begin+0.1s"
+              calcMode="spline"
+              dur="0.6s"
+              id="spinner_BfTD"
+              keySplines=".27,.42,.37,.99;.53,0,.61,.73"
+              values="1;2;1"
+            />
+          </circle>
+          <circle
+            cx="4.21"
+            cy="16.50"
+            r="1"
           >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="FIFA 21"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-9"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Ffifa21.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Ffifa21.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Ffifa21.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Ffifa21.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Ffifa21.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Ffifa21.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Ffifa21.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Ffifa21.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Ffifa21.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-              <span
-                aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
-                data-testid="ml-product-card-is-new-label-test-id-9"
-              >
-                New
-              </span>
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-9"
-              >
-                Sports
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-9"
-                >
-                  FIFA 21
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-9"
-                  value="59.99"
-                >
-                  $59.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add FIFA 21 to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-9"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-10-test-id"
-            description="A massively multiplayer online role-playing game set in the Warcraft universe."
+            <animate
+              attributeName="r"
+              begin="spinner_XyBs.begin+0.1s"
+              calcMode="spline"
+              dur="0.6s"
+              id="spinner_ld6P"
+              keySplines=".27,.42,.37,.99;.53,0,.61,.73"
+              values="1;2;1"
+            />
+          </circle>
+          <circle
+            cx="16.50"
+            cy="19.79"
+            r="1"
           >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="World of Warcraft"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-10"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fworldofwarcraft.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fworldofwarcraft.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fworldofwarcraft.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fworldofwarcraft.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fworldofwarcraft.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fworldofwarcraft.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fworldofwarcraft.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fworldofwarcraft.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fworldofwarcraft.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-10"
-              >
-                MMORPG
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-10"
-                >
-                  World of Warcraft
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-10"
-                  value="14.99"
-                >
-                  $14.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add World of Warcraft to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-10"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-11-test-id"
-            description="A puzzle-platform game that challenges you with mind-bending puzzles."
+            <animate
+              attributeName="r"
+              begin="spinner_BfTD.begin+0.1s"
+              calcMode="spline"
+              dur="0.6s"
+              id="spinner_7gAK"
+              keySplines=".27,.42,.37,.99;.53,0,.61,.73"
+              values="1;2;1"
+            />
+          </circle>
+          <circle
+            cx="7.50"
+            cy="19.79"
+            r="1"
           >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Portal 2"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-11"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fportal2.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fportal2.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fportal2.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fportal2.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fportal2.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fportal2.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fportal2.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fportal2.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fportal2.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-11"
-              >
-                Puzzle
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-11"
-                >
-                  Portal 2
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-11"
-                  value="19.99"
-                >
-                  $19.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Portal 2 to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-11"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-12-test-id"
-            description="A survival horror game set in the aftermath of a deadly virus outbreak."
+            <animate
+              attributeName="r"
+              begin="spinner_HiSl.begin+0.1s"
+              calcMode="spline"
+              dur="0.6s"
+              id="spinner_XyBs"
+              keySplines=".27,.42,.37,.99;.53,0,.61,.73"
+              values="1;2;1"
+            />
+          </circle>
+          <circle
+            cx="12"
+            cy="21"
+            r="1"
           >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Resident Evil 2"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-12"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fresidentevil2.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fresidentevil2.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fresidentevil2.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fresidentevil2.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fresidentevil2.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fresidentevil2.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fresidentevil2.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fresidentevil2.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fresidentevil2.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-12"
-              >
-                Horror
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-12"
-                >
-                  Resident Evil 2
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-12"
-                  value="59.99"
-                >
-                  $59.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Resident Evil 2 to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-12"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-13-test-id"
-            description="An action-adventure game set in a beautifully hand-drawn mysterious world."
-          >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Hollow Knight"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-13"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fhollowknight.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fhollowknight.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fhollowknight.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fhollowknight.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fhollowknight.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fhollowknight.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fhollowknight.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fhollowknight.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fhollowknight.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-              <span
-                aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
-                data-testid="ml-product-card-is-new-label-test-id-13"
-              >
-                New
-              </span>
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-13"
-              >
-                Indie
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-13"
-                >
-                  Hollow Knight
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-13"
-                  value="14.99"
-                >
-                  $14.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Hollow Knight to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-13"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-14-test-id"
-            description="A game where you seek revenge on your foes in late 1500s Sengoku Japan."
-          >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Sekiro: Shadows Die Twice"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-14"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fsekiro.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fsekiro.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fsekiro.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fsekiro.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fsekiro.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fsekiro.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fsekiro.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fsekiro.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fsekiro.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-              <span
-                aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
-                data-testid="ml-product-card-is-new-label-test-id-14"
-              >
-                New
-              </span>
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-14"
-              >
-                Action
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-14"
-                >
-                  Sekiro: Shadows Die Twice
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-14"
-                  value="59.99"
-                >
-                  $59.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Sekiro: Shadows Die Twice to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-14"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-15-test-id"
-            description="A single-player first-person mystery set in the Wyoming wilderness."
-          >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Firewatch"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-15"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Ffirewatch.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Ffirewatch.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Ffirewatch.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Ffirewatch.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Ffirewatch.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Ffirewatch.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Ffirewatch.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Ffirewatch.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Ffirewatch.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-15"
-              >
-                Adventure
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-15"
-                >
-                  Firewatch
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-15"
-                  value="19.99"
-                >
-                  $19.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Firewatch to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-15"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-16-test-id"
-            description="Live as a legendary Viking warrior raised on tales of battle and glory."
-          >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Assassin's Creed Valhalla"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-16"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fassassinscreedvalhalla.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fassassinscreedvalhalla.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fassassinscreedvalhalla.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fassassinscreedvalhalla.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fassassinscreedvalhalla.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fassassinscreedvalhalla.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fassassinscreedvalhalla.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fassassinscreedvalhalla.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fassassinscreedvalhalla.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-              <span
-                aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
-                data-testid="ml-product-card-is-new-label-test-id-16"
-              >
-                New
-              </span>
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-16"
-              >
-                Action-Adventure
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-16"
-                >
-                  Assassin's Creed Valhalla
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-16"
-                  value="59.99"
-                >
-                  $59.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Assassin's Creed Valhalla to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-16"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-17-test-id"
-            description="Embark on an epic journey with your friends to reclaim your homeland."
-          >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Final Fantasy XV"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-17"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Ffinalfantasyxv.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Ffinalfantasyxv.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Ffinalfantasyxv.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Ffinalfantasyxv.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Ffinalfantasyxv.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Ffinalfantasyxv.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Ffinalfantasyxv.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Ffinalfantasyxv.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Ffinalfantasyxv.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-17"
-              >
-                RPG
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-17"
-                >
-                  Final Fantasy XV
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-17"
-                  value="39.99"
-                >
-                  $39.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Final Fantasy XV to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-17"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-18-test-id"
-            description="A free-to-play battle royale game where you fight to be the last one standing."
-          >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Call of Duty: Warzone"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-18"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fcallofdutywarzone.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fcallofdutywarzone.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fcallofdutywarzone.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fcallofdutywarzone.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fcallofdutywarzone.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fcallofdutywarzone.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fcallofdutywarzone.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fcallofdutywarzone.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fcallofdutywarzone.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-18"
-              >
-                Shooter
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-18"
-                >
-                  Call of Duty: Warzone
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-18"
-                  value="77.99"
-                >
-                  $77.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Call of Duty: Warzone to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-18"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-19-test-id"
-            description="A classic strategy game remastered in full HD with new features."
-          >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Age of Empires II: Definitive Edition"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-19"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2FageofempiresII.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2FageofempiresII.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2FageofempiresII.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2FageofempiresII.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2FageofempiresII.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2FageofempiresII.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2FageofempiresII.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2FageofempiresII.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2FageofempiresII.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-19"
-              >
-                Strategy
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-19"
-                >
-                  Age of Empires II: Definitive Edition
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-19"
-                  value="19.99"
-                >
-                  $19.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Age of Empires II: Definitive Edition to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-19"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-20-test-id"
-            description="A fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements."
-          >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="League of Legends"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-20"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fleagueoflegends.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fleagueoflegends.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fleagueoflegends.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fleagueoflegends.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fleagueoflegends.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fleagueoflegends.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fleagueoflegends.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fleagueoflegends.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fleagueoflegends.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-              <span
-                aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
-                data-testid="ml-product-card-is-new-label-test-id-20"
-              >
-                New
-              </span>
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-20"
-              >
-                MOBA
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-20"
-                >
-                  League of Legends
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-20"
-                  value="90"
-                >
-                  $90.00
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add League of Legends to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-20"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-21-test-id"
-            description="Help Madeline survive her inner demons on her journey to the top of Celeste Mountain."
-          >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Celeste"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-21"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fceleste.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fceleste.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fceleste.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fceleste.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fceleste.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fceleste.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fceleste.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fceleste.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fceleste.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-21"
-              >
-                Indie
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-21"
-                >
-                  Celeste
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-21"
-                  value="19.99"
-                >
-                  $19.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Celeste to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-21"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-22-test-id"
-            description="The iconic puzzle game Tetris with a 99-player battle royale twist."
-          >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Tetris 99"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-22"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Ftetris99.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Ftetris99.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Ftetris99.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Ftetris99.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Ftetris99.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Ftetris99.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Ftetris99.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Ftetris99.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Ftetris99.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-              <span
-                aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
-                data-testid="ml-product-card-is-new-label-test-id-22"
-              >
-                New
-              </span>
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-22"
-              >
-                Puzzle
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-22"
-                >
-                  Tetris 99
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-22"
-                  value="85.99"
-                >
-                  $85.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Tetris 99 to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-22"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-23-test-id"
-            description="A fast-paced battle royale game where players fight to be the last one standing."
-          >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Free Fire"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-23"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Ffreefire.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Ffreefire.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Ffreefire.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Ffreefire.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Ffreefire.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Ffreefire.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Ffreefire.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Ffreefire.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Ffreefire.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-23"
-              >
-                Battle Royale
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-23"
-                >
-                  Free Fire
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-23"
-                  value="60.99"
-                >
-                  $60.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Free Fire to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-23"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-24-test-id"
-            description="Kratos steps into the world of Norse gods in this critically acclaimed action game."
-          >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="God of War"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-24"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fgodofwar.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fgodofwar.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fgodofwar.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fgodofwar.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fgodofwar.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fgodofwar.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fgodofwar.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fgodofwar.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fgodofwar.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-24"
-              >
-                Action
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-24"
-                >
-                  God of War
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-24"
-                  value="49.99"
-                >
-                  $49.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add God of War to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-24"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-25-test-id"
-            description="An epic tale of life in America at the dawn of the modern age."
-          >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Red Dead Redemption 2"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-25"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Freddeadredemption2.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Freddeadredemption2.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Freddeadredemption2.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Freddeadredemption2.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Freddeadredemption2.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Freddeadredemption2.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Freddeadredemption2.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Freddeadredemption2.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Freddeadredemption2.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-              <span
-                aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
-                data-testid="ml-product-card-is-new-label-test-id-25"
-              >
-                New
-              </span>
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-25"
-              >
-                Adventure
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-25"
-                >
-                  Red Dead Redemption 2
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-25"
-                  value="59.99"
-                >
-                  $59.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Red Dead Redemption 2 to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-25"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-26-test-id"
-            description="A complex, emotional story in a brutal post-pandemic world."
-          >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="The Last of Us Part II"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-26"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fthelastofuspart2.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fthelastofuspart2.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fthelastofuspart2.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fthelastofuspart2.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fthelastofuspart2.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fthelastofuspart2.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fthelastofuspart2.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fthelastofuspart2.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fthelastofuspart2.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-26"
-              >
-                Horror
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-26"
-                >
-                  The Last of Us Part II
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-26"
-                  value="59.99"
-                >
-                  $59.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add The Last of Us Part II to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-26"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-27-test-id"
-            description="The ultimate version of Mario Kart 8 with more racers, tracks, and features."
-          >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Mario Kart 8 Deluxe"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-27"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fmariokar8.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fmariokar8.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fmariokar8.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fmariokar8.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fmariokar8.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fmariokar8.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fmariokar8.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fmariokar8.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fmariokar8.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-              <span
-                aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
-                data-testid="ml-product-card-is-new-label-test-id-27"
-              >
-                New
-              </span>
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-27"
-              >
-                Racing
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-27"
-                >
-                  Mario Kart 8 Deluxe
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-27"
-                  value="59.99"
-                >
-                  $59.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Mario Kart 8 Deluxe to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-27"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-28-test-id"
-            description="Experience the next generation of basketball simulation."
-          >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="NBA 2K21"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-28"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fnba2k21.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fnba2k21.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fnba2k21.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fnba2k21.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fnba2k21.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fnba2k21.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fnba2k21.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fnba2k21.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fnba2k21.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-28"
-              >
-                Sports
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-28"
-                >
-                  NBA 2K21
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-28"
-                  value="59.99"
-                >
-                  $59.99
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add NBA 2K21 to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-28"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-29-test-id"
-            description="A living, breathing online world where adventure awaits around every corner."
-          >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Guild Wars 2"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-29"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Fguildwars2.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Fguildwars2.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fguildwars2.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fguildwars2.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fguildwars2.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fguildwars2.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fguildwars2.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fguildwars2.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fguildwars2.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-              <span
-                aria-label="New Product"
-                class="absolute top-3 left-3 bg-stone-100 text-gray-medium px-3 py-2 rounded-sm text-center capitalize tracking-sm leading-4 text-base font-normal"
-                data-testid="ml-product-card-is-new-label-test-id-29"
-              >
-                New
-              </span>
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-29"
-              >
-                MMORPG
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-29"
-                >
-                  Guild Wars 2
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-29"
-                  value="70"
-                >
-                  $70.00
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Guild Wars 2 to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-29"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-        <li
-          class="h-full"
-        >
-          <article
-            class="p-6 space-y-5 border-half border-stroke-secondary rounded-2xl font-archivo h-full"
-            data-testid="catalog-products-ml-product-card-30-test-id"
-            description="An online multiplayer social deduction game set in a space-themed setting."
-          >
-            <div
-              class="relative h-60"
-            >
-              <img
-                alt="Among Us"
-                class="object-cover rounded-t-2xl"
-                data-nimg="fill"
-                data-testid="ml-product-card-image-test-id-30"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fgame-images%2Famongus.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fgame-images%2Famongus.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Famongus.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Famongus.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Famongus.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Famongus.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Famongus.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Famongus.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Famongus.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="space-y-3"
-            >
-              <span
-                class="uppercase font-bold text-base leading-4 text-neutral-500 tracking-normal block"
-                data-testid="ml-product-card-genre-test-id-30"
-              >
-                Indie
-              </span>
-              <div
-                class="flex items-center justify-between font-bold tracking-sm text-gray-medium"
-              >
-                <h2
-                  class="inline text-lg leading-5 whitespace-nowrap text-ellipsis overflow-hidden"
-                  data-testid="ml-product-card-name-test-id-30"
-                >
-                  Among Us
-                </h2>
-                <data
-                  class="inline text-xl leading-6 text-center"
-                  data-testid="ml-product-card-price-test-id-30"
-                  value="45"
-                >
-                  $45.00
-                </data>
-              </div>
-            </div>
-            <button
-              aria-label="add Among Us to cart"
-              class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
-              data-testid="ml-product-card-button-30"
-            >
-              ADD TO CART
-            </button>
-          </article>
-        </li>
-      </ul>
-      <div
-        class="px-6 md:px-0 pb-8 md:pb-12"
-      >
-        <button
-          aria-label="See More Products"
-          class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-4 uppercase text-white bg-cta-fill-primary text-sm w-full md:w-auto md:py-5 md:px-6 md:text-base"
-          data-testid="catalog-products-see-more-button-test-id"
-        >
-          See More
-        </button>
-      </div>
+            <animate
+              attributeName="r"
+              begin="spinner_7gAK.begin+0.1s"
+              calcMode="spline"
+              dur="0.6s"
+              id="spinner_HiSl"
+              keySplines=".27,.42,.37,.99;.53,0,.61,.73"
+              values="1;2;1"
+            />
+          </circle>
+          <animatetransform
+            attributeName="transform"
+            dur="6s"
+            repeatCount="indefinite"
+            type="rotate"
+            values="360 12 12;0 12 12"
+          />
+        </g>
+      </svg>
     </div>
   </section>
 </DocumentFragment>

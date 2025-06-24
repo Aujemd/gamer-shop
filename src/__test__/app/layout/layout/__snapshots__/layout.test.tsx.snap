@@ -7,7 +7,7 @@ exports[`layout Component renders correctly 1`] = `
     data-testid="layout-or-header-test-id"
   >
     <div
-      class="px-6 py-5 flex items-center justify-between text-cta-fill-primary lg:max-w-desktop mx-auto lg:px-0"
+      class="px-6 py-5 flex items-center justify-between text-cta-fill-primary lg:max-w-desktop mx-auto xl:px-0"
     >
       <h1
         class="font-area font-bold text-2xl leading-6 text-center tracking-sm"
@@ -38,7 +38,9 @@ exports[`layout Component renders correctly 1`] = `
       </a>
     </div>
   </header>
-  <main>
+  <main
+    class="min-h-screen"
+  >
     Hello Layout
   </main>
   <footer
