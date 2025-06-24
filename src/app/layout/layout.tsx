@@ -14,7 +14,7 @@ export default function Layout(props: LayoutProps) {
     return (
         <>
             <OrHeader data-testid="layout-or-header-test-id" />
-            <main>
+            <main className="min-h-screen">
                 {children}
             </main>
             <OrFooter data-testid="layout-or-footer-test-id" />
