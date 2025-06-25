@@ -1,10 +1,11 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import { createContext, useCallback, useContext, useMemo, useState } from "react";
 
-import type { CatalogContextType } from "@/catalog";
+import type { CatalogContextType, GetGameResponseType } from "@/catalog";
 
 import { getGames } from "@/catalog/services";
+import { useDataFetching } from "@/shared";
 
 export const catalogContextDefaultValue: CatalogContextType = {
     games: [],
@@ -48,38 +49,36 @@ export function CatalogProvider({ children }: { readonly children: React.ReactNo
 
     const [catalogState, setCatalogState] = useState<CatalogContextType>({ ...catalogContextDefaultValue, genre: selectedGenre });
 
-    const fetchGames = async () => {
-        setCatalogState(prevState => ({ ...prevState, isLoading: true }));
-        try {
-            const { currentPage, genre } = catalogState;
+    const { useCachedFetch } = useDataFetching();
 
-            const getGamesParams = {
-                ...(currentPage && { page: currentPage }),
-                ...(genre && { genre }),
-            };
+    const getGamesParams = useMemo(() => {
+        const { currentPage, genre } = catalogState;
+        return {
+            ...(currentPage && { page: currentPage }),
+            ...(genre && { genre }),
+        };
+    }, [catalogState.currentPage, catalogState.genre]);
 
-            const response = await getGames(getGamesParams);
+    const { isLoading } = useCachedFetch({
+        key: getGamesParams,
+        fetcher: getGames,
+        config: {
+            onSuccess: ({ games, ...response }: GetGameResponseType) => {
+                setCatalogState(({ currentPage, games: prevGames, ...prevState }) => {
+                    const currentIds = new Set(prevGames.map(game => game.id));
 
-            setCatalogState(({ currentPage, games: prevGames, ...prevState }) => {
-                const currentIds = new Set(prevGames.map(game => game.id));
+                    const newGames = games.filter(game => !currentIds.has(game.id));
 
-                const newGames = response.games.filter(game => !currentIds.has(game.id));
-
-                return {
-                    ...prevState,
-                    ...response,
-                    currentPage,
-                    games: [...prevGames, ...newGames],
-                };
-            });
-        }
-        catch (e: any) {
-            console.error("Failed to fetch games:", e);
-        }
-        finally {
-            setCatalogState(prevState => ({ ...prevState, isLoading: false }));
-        }
-    };
+                    return {
+                        ...prevState,
+                        ...response,
+                        currentPage,
+                        games: [...prevGames, ...newGames],
+                    };
+                });
+            },
+        },
+    });
 
     const handleGetNextPage = useCallback(() => {
         setCatalogState(prevState => ({
@@ -97,11 +96,7 @@ export function CatalogProvider({ children }: { readonly children: React.ReactNo
         }));
     }, []);
 
-    const catalogContextValue = useMemo(() => ({ ...catalogState, handleGetNextPage, handleGetByGenrePage }), [catalogState, handleGetNextPage, handleGetByGenrePage]);
-
-    useEffect(() => {
-        fetchGames();
-    }, [catalogState.currentPage, catalogState.genre]);
+    const catalogContextValue = useMemo(() => ({ ...catalogState, isLoading, handleGetNextPage, handleGetByGenrePage }), [catalogState, isLoading, handleGetNextPage, handleGetByGenrePage]);
 
     return (
         <CatalogContext.Provider value={catalogContextValue}>

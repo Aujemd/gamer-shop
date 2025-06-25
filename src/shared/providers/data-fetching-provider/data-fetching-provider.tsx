@@ -1,14 +1,15 @@
 "use client";
 import { createContext, useContext } from "react";
-import useSWR from "swr";
+import useSWR, { SWRConfig } from "swr";
 
-import type { DataFetchingContextType } from "@/shared";
+import type { DataFetchingContextType, useCachedFetchProps } from "@/shared";
 
 export const DataFetchingContext = createContext<DataFetchingContextType | null>(null);
 
-export const DataFetching: DataFetchingContextType = (key, fetcher) => {
-    const { data, error, isLoading } = useSWR(key, fetcher);
-    return { data, error, isLoading };
+export const useCachedFetch = ({ key, fetcher, config }: useCachedFetchProps) => useSWR(key, fetcher, config);
+
+export const dataFetchingContextValue: DataFetchingContextType = {
+    useCachedFetch,
 };
 
 /**
@@ -19,10 +20,14 @@ export const DataFetching: DataFetchingContextType = (key, fetcher) => {
  */
 export function DataFetchingProvider(props: { readonly children: React.ReactNode }) {
     const { children } = props;
+
     return (
-        <DataFetchingContext.Provider value={DataFetching}>
-            {children}
-        </DataFetchingContext.Provider>
+        <SWRConfig value={{ }}>
+            <DataFetchingContext.Provider value={dataFetchingContextValue}>
+                {children}
+            </DataFetchingContext.Provider>
+        </SWRConfig>
+
     );
 }
 

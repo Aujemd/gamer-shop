@@ -1,10 +1,13 @@
-export type CachedDataResultType<Data = any, Error = any> = {
-    data: Data | undefined;
-    error: Error | undefined;
-    isLoading: boolean;
+import type { SWRConfiguration, SWRResponse } from "swr";
+
+export type useCachedFetchProps<Data = any, K = any> = {
+    key: K;
+    fetcher: (key: K) => Promise<Data>;
+    config?: SWRConfiguration;
 };
 
-export type DataFetchingContextType = <Data = any, Error = any>(
-    key: string,
-    fetcher: (key: string) => Promise<Data>
-) => CachedDataResultType<Data, Error>;
+export type DataFetchingContextType = {
+    useCachedFetch: <Data = any, Error = any>(
+        props: useCachedFetchProps
+    ) => SWRResponse<Data, Error, SWRConfiguration | undefined>;
+};
