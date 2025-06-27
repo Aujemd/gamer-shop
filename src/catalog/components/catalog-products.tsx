@@ -4,7 +4,7 @@ import type { HTMLAttributes } from "react";
 import { useStoredCart } from "@/cart/hooks";
 import { useCatalog } from "@/catalog";
 import { LoadingIcon } from "@/icons";
-import { AtButton, MlProductCard, OrProduct } from "@/shared";
+import { AtButton, MlProductCardMemo, OrProduct } from "@/shared";
 
 type CatalogProductsProps = Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>; ;
 
@@ -31,7 +31,7 @@ export default function CatalogProducts(props: CatalogProductsProps) {
                 <OrProduct className={showMoreButton ? "pb-0" : ""}>
                     {products.map((product, index) => (
                         <li key={product.id} className="h-full">
-                            <MlProductCard
+                            <MlProductCardMemo
                                 {...product}
                                 index={index}
                                 className="h-full"

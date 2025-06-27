@@ -3,6 +3,7 @@ import type { HTMLAttributes } from "react";
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import { memo } from "react";
 
 import type { Game } from "@/utils/endpoint";
 
@@ -84,3 +85,17 @@ export default function MlProductCard(props: MlProductCard) {
         </article>
     );
 }
+
+/**
+ * Function to compare previous and next props for memoization.
+ * This function checks if the id, index, and buttonLabel of the previous and next props
+ * are the same, and returns true if they are equal, false otherwise.
+ * This is used to prevent unnecessary re-renders of the MlProductCard component.
+ * @param prevProps - The previous props of the component.
+ * @param nextProps - The next props of the component.
+ * @returns - Returns true if the props are equal, false otherwise.
+ */
+export function isEqual(prevProps: MlProductCard, nextProps: MlProductCard) {
+    return prevProps.id === nextProps.id && prevProps.index === nextProps.index && prevProps.buttonLabel === nextProps.buttonLabel;
+}
+export const MlProductCardMemo = memo(MlProductCard, isEqual);
