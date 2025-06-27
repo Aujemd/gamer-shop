@@ -52,9 +52,9 @@ export default function CatalogProducts(props: CatalogProductsProps) {
                             <AtButton
                                 onClick={handleGetNextPage}
                                 aria-label="See More Products"
-                                className="py-4 uppercase text-white bg-cta-fill-primary text-sm w-full md:w-auto md:py-5 md:px-6 md:text-base"
+                                className="py-4 uppercase text-white bg-cta-fill-primary text-sm w-full md:w-auto md:py-5 md:px-6 md:text-base disabled:opacity-50 disabled:cursor-not-allowed"
                                 data-testid="catalog-products-see-more-button-test-id"
-                                disabled={currentPage >= totalPages}
+                                disabled={currentPage >= totalPages || isLoading}
                             >
                                 See More
                             </AtButton>
