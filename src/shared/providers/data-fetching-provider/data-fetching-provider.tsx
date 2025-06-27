@@ -1,15 +1,27 @@
 "use client";
+import {
+    QueryClient,
+    QueryClientProvider,
+    useQuery,
+} from "@tanstack/react-query";
 import { createContext, useContext } from "react";
-import useSWR, { SWRConfig } from "swr";
 
-import type { DataFetchingContextType, useCachedFetchProps } from "@/shared";
+import type { DataFetchingContextValue } from "@/shared";
 
-export const DataFetchingContext = createContext<DataFetchingContextType | null>(null);
+export const DataFetchingContext = createContext<DataFetchingContextValue | null>(null);
 
-export const useCachedFetch = ({ key, fetcher, config }: useCachedFetchProps) => useSWR(key, fetcher, config);
+const queryClient = new QueryClient({
+    defaultOptions: {
+        queries: {
+            staleTime: 1000 * 60 * 60,
+        },
+    },
+});
 
-export const dataFetchingContextValue: DataFetchingContextType = {
-    useCachedFetch,
+export const useQueryWrapped = useQuery;
+
+export const dataFetchingContextValue = {
+    useQueryWrapped,
 };
 
 /**
@@ -22,11 +34,11 @@ export function DataFetchingProvider(props: { readonly children: React.ReactNode
     const { children } = props;
 
     return (
-        <SWRConfig value={{ }}>
+        <QueryClientProvider client={queryClient}>
             <DataFetchingContext.Provider value={dataFetchingContextValue}>
                 {children}
             </DataFetchingContext.Provider>
-        </SWRConfig>
+        </QueryClientProvider>
 
     );
 }

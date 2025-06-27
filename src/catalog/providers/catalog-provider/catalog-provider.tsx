@@ -1,6 +1,7 @@
 "use client";
+
 import { useSearchParams } from "next/navigation";
-import { createContext, useCallback, useContext, useMemo, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 
 import type { CatalogContextType, GetGameResponseType } from "@/catalog";
 
@@ -49,7 +50,7 @@ export function CatalogProvider({ children }: { readonly children: React.ReactNo
 
     const [catalogState, setCatalogState] = useState<CatalogContextType>({ ...catalogContextDefaultValue, genre: selectedGenre });
 
-    const { useCachedFetch } = useDataFetching();
+    const { useQueryWrapped } = useDataFetching();
 
     const getGamesParams = useMemo(() => {
         const { currentPage, genre } = catalogState;
@@ -59,25 +60,11 @@ export function CatalogProvider({ children }: { readonly children: React.ReactNo
         };
     }, [catalogState.currentPage, catalogState.genre]);
 
-    const { isLoading } = useCachedFetch({
-        key: getGamesParams,
-        fetcher: getGames,
-        config: {
-            onSuccess: ({ games, ...response }: GetGameResponseType) => {
-                setCatalogState(({ currentPage, games: prevGames, ...prevState }) => {
-                    const currentIds = new Set(prevGames.map(game => game.id));
+    const { isFetching, isSuccess, data }
+    = useQueryWrapped({
+        queryKey: ["games", catalogState.currentPage, catalogState.genre],
+        queryFn: () => getGames(getGamesParams),
 
-                    const newGames = games.filter(game => !currentIds.has(game.id));
-
-                    return {
-                        ...prevState,
-                        ...response,
-                        currentPage,
-                        games: [...prevGames, ...newGames],
-                    };
-                });
-            },
-        },
     });
 
     const handleGetNextPage = useCallback(() => {
@@ -96,11 +83,30 @@ export function CatalogProvider({ children }: { readonly children: React.ReactNo
         }));
     }, []);
 
-    const catalogContextValue = useMemo(() => ({ ...catalogState, isLoading, handleGetNextPage, handleGetByGenrePage }), [catalogState, isLoading, handleGetNextPage, handleGetByGenrePage]);
+    const catalogContextValue = useMemo(() => ({ ...catalogState, isLoading: isFetching, handleGetNextPage, handleGetByGenrePage }), [catalogState, isFetching, handleGetNextPage, handleGetByGenrePage]);
 
+    useEffect(() => {
+        if (isSuccess && data?.games) {
+            const { games, ...response }: GetGameResponseType = data;
+            setCatalogState(({ currentPage, games: prevGames, ...prevState }) => {
+                const currentIds = new Set(prevGames.map(game => game.id));
+
+                const newGames = games.filter(game => !currentIds.has(game.id));
+
+                return {
+                    ...prevState,
+                    ...response,
+                    currentPage,
+                    games: [...prevGames, ...newGames],
+                };
+            });
+        }
+    }, [data?.games, isSuccess]);
     return (
+
         <CatalogContext.Provider value={catalogContextValue}>
             {children}
         </CatalogContext.Provider>
+
     );
 }
