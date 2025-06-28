@@ -1,6 +1,7 @@
 import type { HTMLAttributes } from "react";
 
 import Image from "next/image";
+import { memo } from "react";
 
 import type { Game } from "@/utils/endpoint";
 
@@ -81,3 +82,20 @@ export default function MlCardBasket(props: MlCardBasket) {
         </article>
     );
 }
+
+/**
+ * Compares the previous and next props of the MlCardBasket component.
+ * This function is used to determine if the component should re-render.
+ * It checks if the id of the previous props is equal to the id of the next props.
+ * If they are equal, it returns true, indicating that the component should not re-render.
+ * If they are not equal, it returns false, indicating that the component should re-render.
+ * @param prevProps - The previous props of the component.
+ * @param nextProps - The next props of the component.
+ * @returns - Returns true if the props are equal, false otherwise.
+ */
+export function isEqual(prevProps: MlCardBasket, nextProps: MlCardBasket) {
+    return (
+        prevProps.id === nextProps.id
+    );
+}
+export const MlCardBasketMemo = memo(MlCardBasket, isEqual);

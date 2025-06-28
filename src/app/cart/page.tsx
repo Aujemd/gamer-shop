@@ -4,7 +4,7 @@ import type { JSX } from "react";
 import { CartHeader } from "@/cart";
 import { useStoredCart } from "@/cart/hooks";
 import { ArrowLeft } from "@/icons";
-import { AtLink, MlCardBasket, OrOrderSummary } from "@/shared";
+import { AtLink, MlCardBasketMemo, OrOrderSummary } from "@/shared";
 
 /**
  * Cart page component of the application.
@@ -13,7 +13,7 @@ import { AtLink, MlCardBasket, OrOrderSummary } from "@/shared";
 export default function Cart(): JSX.Element {
     const { cartItems, removeItemFromCart } = useStoredCart();
 
-    const cartItemsCount = cartItems.length;
+    const cartItemsCount = cartItems.length ?? 0;
 
     return (
         <div className="max-w-desktop mx-auto">
@@ -30,7 +30,7 @@ export default function Cart(): JSX.Element {
                 <ul className="w-full">
                     {cartItems.map((product, index) => (
                         <li key={product.id}>
-                            <MlCardBasket
+                            <MlCardBasketMemo
                                 {...product}
                                 className={cartItems.length === index + 1 ? "border-none" : ""}
                                 onRemoveButtonClick={() => removeItemFromCart(product.id)}
