@@ -32,6 +32,7 @@ export default function MlCardBasket(props: MlCardBasket) {
                         className="object-cover"
                         fill
                         data-testid={`ml-card-basket-image-test-id-${id}`}
+                        sizes="(max-width: 768px) 40vw, (max-width: 1200px) 33vw"
                     />
                 </div>
                 <button
