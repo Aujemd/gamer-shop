@@ -8,7 +8,7 @@ import type { Game } from "@/utils/endpoint";
 import { XMark } from "@/icons";
 import { formatCurrency } from "@/shared";
 
-type MlCardBasket = Game & { onRemoveButtonClick: () => void } & Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
+type MlCardBasket = Game & { onRemoveButtonClick: () => void; index?: number } & Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
 
 /**
  * MlCardBasket component for the application.
@@ -17,7 +17,7 @@ type MlCardBasket = Game & { onRemoveButtonClick: () => void } & Readonly<Omit<H
  */
 export default function MlCardBasket(props: MlCardBasket) {
     const { className = "", onRemoveButtonClick, ...productData } = props;
-    const { id, genre, image, name, price, isNew, description, ...rest } = productData;
+    const { id, genre, image, name, price, isNew, description, index = 0, ...rest } = productData;
 
     return (
         <article
@@ -33,6 +33,7 @@ export default function MlCardBasket(props: MlCardBasket) {
                         fill
                         data-testid={`ml-card-basket-image-test-id-${id}`}
                         sizes="(max-width: 768px) 40vw, (max-width: 1200px) 33vw"
+                        priority={index < 3}
                     />
                 </div>
                 <button
