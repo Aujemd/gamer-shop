@@ -18,6 +18,7 @@ export default function OrFooter(props: OrFooterProps) {
             <Link
                 href="/"
                 data-testid="or-footer-logo-link-test-id"
+                aria-label="Go to homepage"
             >
                 <LogoIcon
                     data-testid="or-footer-logo-icon-test-id"
