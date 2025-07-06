@@ -26,6 +26,7 @@ export default function OrHeader(props: OrHeaderProps) {
                 </h1>
                 <Link
                     href="/cart"
+                    aria-label="View shopping cart"
                     data-testid="or-header-cart-link-test-id"
                 >
                     <CartIcon
