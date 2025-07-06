@@ -1,17 +1,12 @@
 "use client";
 import type { HTMLAttributes } from "react";
 
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import { memo } from "react";
 
 import type { Game } from "@/utils/endpoint";
 
-import { formatCurrency } from "@/shared";
-
-const AtButton = dynamic(() => import("@/shared/components/atoms/at-button"), {
-    ssr: false,
-});
+import { AtButton, formatCurrency } from "@/shared";
 
 type MlProductCard = Game & { index?: number; buttonLabel?: string; onButtonClick?: () => void } & Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>;
 

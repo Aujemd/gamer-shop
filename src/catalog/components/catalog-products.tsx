@@ -4,7 +4,7 @@ import type { HTMLAttributes } from "react";
 import { useStoredCart } from "@/cart/hooks";
 import { useCatalog } from "@/catalog";
 import { LoadingIcon } from "@/icons";
-import { AtButton, MlProductCardMemo, OrProduct } from "@/shared";
+import { AtButton, MlProductCardMemo, OrProduct, useClient } from "@/shared";
 
 type CatalogProductsProps = Readonly<Omit<HTMLAttributes<HTMLElement>, "children">>; ;
 
@@ -23,26 +23,31 @@ export default function CatalogProducts(props: CatalogProductsProps) {
 
     const { addItemToCart, isItemInCart, removeItemFromCart } = useStoredCart();
 
+    const isClient = useClient();
+
     return (
         <section
             {...rest}
         >
             <div className="max-w-desktop mx-auto">
                 <OrProduct className={showMoreButton ? "pb-0" : ""}>
-                    {products.map((product, index) => (
-                        <li key={product.id} className="h-full">
-                            <MlProductCardMemo
-                                {...product}
-                                index={index}
-                                className="h-full"
-                                buttonLabel={isItemInCart(product.id) ? "Remove" : "Add to Cart"}
-                                onButtonClick={() => {
-                                    isItemInCart(product.id) ? removeItemFromCart(product.id) : addItemToCart(product);
-                                }}
-                                data-testid={`catalog-products-ml-product-card-${product.id}-test-id`}
-                            />
-                        </li>
-                    ))}
+                    {products.map((product, index) => {
+                        const isInCart = isClient && isItemInCart(product.id);
+                        return (
+                            <li key={product.id} className="h-full">
+                                <MlProductCardMemo
+                                    {...product}
+                                    index={index}
+                                    className="h-full"
+                                    buttonLabel={isInCart ? "Remove" : "Add to Cart"}
+                                    onButtonClick={() => {
+                                        isInCart ? removeItemFromCart(product.id) : addItemToCart(product);
+                                    }}
+                                    data-testid={`catalog-products-ml-product-card-${product.id}-test-id`}
+                                />
+                            </li>
+                        );
+                    })}
                 </OrProduct>
                 {isLoading && <LoadingIcon className="w-8 fill-cta-fill-primary mx-auto my-6" />}
                 {
