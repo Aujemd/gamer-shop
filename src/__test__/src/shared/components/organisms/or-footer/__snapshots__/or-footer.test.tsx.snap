@@ -6,6 +6,7 @@ exports[`orFooter Component should render correctly 1`] = `
     class="bg-neutral-700 py-16 flex justify-center items-center "
   >
     <a
+      aria-label="Go to homepage"
       data-testid="or-footer-logo-link-test-id"
       href="/"
     >

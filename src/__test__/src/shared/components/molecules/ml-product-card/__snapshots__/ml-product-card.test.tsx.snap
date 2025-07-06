@@ -16,7 +16,7 @@ exports[`mlProductCard should render correctly 1`] = `
         data-nimg="fill"
         data-testid="ml-product-card-image-test-id-1"
         decoding="async"
-        sizes="(max-width: 768px) 40vw, (max-width: 1200px) 33vw"
+        sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 30vw"
         src="/_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=3840&q=75"
         srcset="/_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=256&q=75 256w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=384&q=75 384w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=640&q=75 640w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=750&q=75 750w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=828&q=75 828w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fgame-images%2Fcyberpunk2077.jpeg&w=3840&q=75 3840w"
         style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
@@ -56,6 +56,13 @@ exports[`mlProductCard should render correctly 1`] = `
         </data>
       </div>
     </div>
+    <button
+      aria-label="add Cyberpunk 2077 to cart"
+      class="font-archivo font-bold text-base leading-4 tracking-sm text-center rounded-lg py-5 w-full border border-gray-medium uppercase hover:bg-gray-medium hover:text-white cursor-pointer transition-colors"
+      data-testid="ml-product-card-button-1"
+    >
+      Click
+    </button>
   </article>
 </DocumentFragment>
 `;

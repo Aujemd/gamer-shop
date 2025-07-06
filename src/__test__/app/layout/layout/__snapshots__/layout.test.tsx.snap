@@ -20,6 +20,7 @@ exports[`layout Component renders correctly 1`] = `
         </a>
       </h1>
       <a
+        aria-label="View shopping cart"
         data-testid="or-header-cart-link-test-id"
         href="/cart"
       >
@@ -48,6 +49,7 @@ exports[`layout Component renders correctly 1`] = `
     data-testid="layout-or-footer-test-id"
   >
     <a
+      aria-label="Go to homepage"
       data-testid="or-footer-logo-link-test-id"
       href="/"
     >
