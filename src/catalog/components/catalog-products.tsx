@@ -19,7 +19,7 @@ export default function CatalogProducts(props: CatalogProductsProps) {
 
     const { totalPages, currentPage, games: products, isLoading, handleGetNextPage } = useCatalog();
 
-    const showMoreButton = totalPages > 1 && currentPage < totalPages && products.length === 12;
+    const showMoreButton = totalPages > 1 && currentPage < totalPages && products.length >= 12;
 
     const { addItemToCart, isItemInCart, removeItemFromCart } = useStoredCart();
 
