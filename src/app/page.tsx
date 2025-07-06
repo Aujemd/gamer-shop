@@ -11,13 +11,11 @@ import { LoadingIcon } from "@/icons";
  */
 export default async function Home(): Promise<JSX.Element> {
     return (
-
-        <CatalogProvider>
-            <CatalogHeader />
-            <Suspense fallback={<LoadingIcon className="w-8 fill-cta-fill-primary mx-auto my-6" />}>
+        <Suspense fallback={<LoadingIcon className="w-8 fill-cta-fill-primary mx-auto my-6" />}>
+            <CatalogProvider>
+                <CatalogHeader />
                 <CatalogProducts />
-            </Suspense>
-        </CatalogProvider>
-
+            </CatalogProvider>
+        </Suspense>
     );
 }
