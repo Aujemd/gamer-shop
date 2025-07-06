@@ -14,4 +14,5 @@ export const area = localFont({
     display: "swap",
     variable: "--font-area",
     fallback: ["system-ui", "arial"],
+    preload: true,
 });
