@@ -31,7 +31,7 @@ export default function MlProductCard(props: MlProductCard) {
                     className="object-cover rounded-t-2xl"
                     fill
                     data-testid={`ml-product-card-image-test-id-${id}`}
-                    sizes="(max-width: 768px) 40vw, (max-width: 1200px) 33vw"
+                    sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 30vw"
                     priority={index < 3}
                 />
                 {
