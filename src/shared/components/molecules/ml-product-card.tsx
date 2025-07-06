@@ -29,11 +29,11 @@ export default function MlProductCard(props: MlProductCard) {
             className={`p-6 space-y-5 border-half border-stroke-secondary rounded-4xl font-archivo ${className}`}
             {...rest}
         >
-            <div className="relative h-60">
+            <div className="relative h-[15rem] overflow-hidden rounded-t-2xl">
                 <Image
                     src={image}
                     alt={name}
-                    className="object-cover rounded-t-2xl"
+                    className="object-cover"
                     fill
                     data-testid={`ml-product-card-image-test-id-${id}`}
                     sizes="(max-width: 768px) 40vw, (max-width: 1200px) 33vw"
