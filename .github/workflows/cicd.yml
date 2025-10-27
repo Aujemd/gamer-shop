@@ -1,0 +1,48 @@
+name: Deploy Next.js App
+
+on:
+    push:
+        branches:
+            - main
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Source
+              uses: actions/checkout@v4
+            - name: Create .env file
+              run: |
+                    echo "NEXT_PUBLIC_API_URL=${{ secrets.NEXT_PUBLIC_API_URL }}" >> .env
+            - name: Build and Push Docker Image
+              run: |
+                    docker build -t nextjs-app:latest .
+            - name: Login to DockerHub
+              uses: docker/login-action@v2
+              with:
+                  username: ${{ secrets.DOCKERHUB_USERNAME }}
+                  password: ${{ secrets.DOCKERHUB_TOKEN }}
+            - name: Push Docker Image
+              run: |
+                    docker tag nextjs-app:latest ${{ secrets.DOCKERHUB_USERNAME }}/nextjs-app:latest
+                    docker push ${{ secrets.DOCKERHUB_USERNAME }}/nextjs-app:latest                    
+    deploy:
+        needs: build
+        runs-on: self-hosted
+        steps:
+            - name: Pull image from DockerHub
+              run: |
+                    docker pull ${{ secrets.DOCKERHUB_USERNAME }}/nextjs-app:latest
+            - name: Stop existing container
+              run: |
+                    docker stop nextjs-app || true
+            - name: Remove existing container
+              run: |
+                    docker rm nextjs-app || true
+            - name: Run new container
+              run: |
+                    docker run -d -p 80:3000 --name nextjs-app ${{ secrets.DOCKERHUB_USERNAME }}/nextjs-app:latest
+
+
+
+                    
+            
