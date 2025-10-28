@@ -21,7 +21,7 @@ export default function OrHeader(props: OrHeaderProps) {
                         href="/"
                         data-testid="or-header-logo-link-test-id"
                     >
-                        GamerShop From AWS
+                        GamerShop
                     </Link>
                 </h1>
                 <Link
